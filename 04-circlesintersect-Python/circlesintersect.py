@@ -9,5 +9,4 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	radi = (r1 + r2)**2
 	if (dist == radi):
 		return True
-	else:
-		return False 
+	return False 
