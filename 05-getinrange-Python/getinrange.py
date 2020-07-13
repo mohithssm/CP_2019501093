@@ -5,11 +5,11 @@
 # or if x is greater than the upper bound, return the upper bound.
 
 def fun_getinrange(x, bound1, bound2):
-    if (x < bound1):
-        return bound1
-    elif (x > bound2):
-        return bound2
-    elif (bound1 < x and x < bound2):
-        return -1
-    else:
-        return x
+	if (bound1 < x):
+		return -1
+	elif (x < bound1):
+		return bound1
+	elif (x > bound2):
+		return bound2
+	else:
+		return
