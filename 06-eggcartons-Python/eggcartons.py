@@ -5,4 +5,4 @@
 
 
 def fun_eggcartons(eggs):
-	print(eggs // 12)	
+	return (eggs // 12)	
