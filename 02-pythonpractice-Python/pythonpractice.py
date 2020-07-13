@@ -32,5 +32,4 @@ class Classy(object):
                 sum = sum + 4
             elif (elem == "monocle"):
                 sum = sum + 5
-
-            return sum
+        return sum
