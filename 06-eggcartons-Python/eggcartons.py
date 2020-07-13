@@ -3,7 +3,8 @@
 # the smallest integer number of cartons required to hold 
 # that many eggs, where a carton may hold up to 12 eggs
 
+from math import floor  
 
 def fun_eggcartons(eggs):
 	# your code goes here
-	return 1
+	return math.floor(eggs)
