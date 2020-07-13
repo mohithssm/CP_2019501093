@@ -21,7 +21,7 @@ class Classy(object):
         self.items = []
 
     def addItem(self, str):
-        self.items.add(str)
+        self.items.append(str)
     
     def classiness(self):
         sum = 0
