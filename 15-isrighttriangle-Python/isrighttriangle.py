@@ -7,11 +7,15 @@
 import math
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
-	d1 = math.sqrt((x2-x1)**2 + (y2-y1)**2)
-	d2 = math.sqrt((x3-x2)**2 + (y3-y2)**2)
-	d3 = math.sqrt((x3-x1)**2 + (y3-y1)**2)
-	sum = d1**2 + d2**2
-	if (sum == d3*2):
+	s1 = (y2-y1)/(x2-x1)
+	s2 = (y3-y2)/(x3-x2)
+	s3 = (y3-y1)/(x3-x1)
+
+	if (s1 * s2 == -1 ):
+		return True
+	elif (s2 * s3 == -1):
+		return True
+	elif (s1 * s3 == -1):
 		return True
 	else:
 		return False
