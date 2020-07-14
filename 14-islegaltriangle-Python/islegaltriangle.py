@@ -8,7 +8,7 @@
 def islegaltriangle(s1, s2, s3):
 	max_num = max(list(s1, s2, s3))
 
-	if (s1 >= 0 and s2 >= 0 and s3 >= 0):
+	if (s1 > 0 and s2 > 0 and s3 > 0):
 		if (s2+s3  > s1 and max_num == s1):
 			return True
 		elif (s1+s3  > s2 and max_num == s2):
