@@ -11,5 +11,4 @@ def handtodice(hand):
 		rem = hand % 10
 		hand = hand // 10
 		arr.append(rem)
-	return tuple(arr[::-1]) 
-
+	return tuple(arr[::-1])
