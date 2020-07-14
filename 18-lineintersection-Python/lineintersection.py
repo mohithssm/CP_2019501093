@@ -9,5 +9,5 @@ def lineintersection(m1, b1, m2, b2):
 		return None
 	else:
 		a = (-b2+b1)/(-m1+m2)
-		return ()
+		return a
 
