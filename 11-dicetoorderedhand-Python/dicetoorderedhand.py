@@ -13,8 +13,7 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	arr = [a, b. c]
+	arr = [a, b, c]
 	arr.sort(reverse=True)
 	for elem in arr:
 		print(elem, end="")
-		
