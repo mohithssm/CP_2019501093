@@ -15,5 +15,7 @@ def dicetoorderedhand(a, b, c):
 	# your code goes here
 	arr = [a, b, c]
 	arr.sort(reverse=True)
-	for elem in arr:
-		print(elem, end="")
+	strings = [str(integer) for integer in arr]
+	arr_string = "".join(strings)
+	res = int(arr_string)
+	return res
