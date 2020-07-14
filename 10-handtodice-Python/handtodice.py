@@ -7,7 +7,6 @@
 
 def handtodice(hand):
 	arr = []
-	result = 0
 	while (hand > 0):
 		rem = hand % 10
 		hand = hand // 10
