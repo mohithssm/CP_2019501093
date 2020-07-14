@@ -5,4 +5,8 @@
 
 
 def fun_eggcartons(eggs):
-	return (eggs // 12)	
+	count = 0
+	while(eggs > 0):
+		eggs -= 12
+		count += 1
+	return count
