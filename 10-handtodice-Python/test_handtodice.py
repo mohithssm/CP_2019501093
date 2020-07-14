@@ -4,7 +4,6 @@ import os
 import sys
 sys.path.append(os.getcwd())
 
-
 @pytest.mark.parametrize('a, check', [
     (123, (1, 2, 3)),
     (214, (2, 1, 4)),
