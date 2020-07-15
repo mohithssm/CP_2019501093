@@ -9,9 +9,9 @@ def fun_nearestodd(n):
 	if (int(n)%2 == 0):
 		temp1 = int(n) - 1
 		temp2 = int(n) + 1
-		if n - temp1 < temp2 - b:
+		if n - temp1 < temp2 - n:
 			return temp1
-		elif n - temp1 > temp2 - b:
+		elif n - temp1 > temp2 - n:
 			return temp2
 		else:
 			return n 
