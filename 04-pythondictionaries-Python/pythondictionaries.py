@@ -40,7 +40,7 @@ def alphaAsia():
     countries = locations['Asia']
     lst = []
     for elem in countries:
-        temp = f"{locations['Asia'][x][0]} - {x}"
+        temp = f"{locations['Asia'][elem][0]} - {elem}"
         lst.append(temp)
     lst.sort()
     return lst
