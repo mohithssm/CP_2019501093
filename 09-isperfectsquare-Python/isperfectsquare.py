@@ -7,10 +7,9 @@ import math
 def isperfectsquare(n):
 	# your code goes here
 	num = math.sqrt(n)
-	print(num)
-	if num**2 == n:
+	return ((num - math.sqrt(n)) == 0)
+	if isperfectsquare(n):
 		return True
 	else:
 		return False
 
-isperfectsquare(625)
