@@ -44,3 +44,8 @@ def alphaAsia():
         lst.append(temp)
     lst.sort()
     return lst
+
+print(1)
+print(sortUSA())
+print(2)
+print(alphaAsia())
