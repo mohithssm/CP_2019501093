@@ -16,4 +16,5 @@ class Queue:
 
     def dequeue(self):
         x = self.storage[0]
-        return self.storage.remove(x)
+        self.storage.remove(x)
+        return x
