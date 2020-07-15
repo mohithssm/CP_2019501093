@@ -13,9 +13,10 @@ def fun_get_kth_digit(digit, k):
 		nums.append(num)
 	# print(len(nums))
 	if (k >= len(nums)):
-		return nums[k]
-	else:
 		return 0
+		
+	else:
+		return nums[k]
 
 # print(fun_get_kth_digit(789,3))
 # print(fun_get_kth_digit(-789,0))
