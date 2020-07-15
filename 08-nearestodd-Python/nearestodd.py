@@ -4,7 +4,6 @@
 # Note that the result must be an int, so nearestOdd(13.0) is the int 13, and not the float 13.0.
 
 
-
 def fun_nearestodd(n):
 
 	if (int(n)%2 == 0):
