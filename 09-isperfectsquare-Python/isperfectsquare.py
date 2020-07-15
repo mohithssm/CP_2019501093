@@ -12,5 +12,3 @@ def isperfectsquare(n):
 		return True
 	else:
 		return False
-
-isperfectsquare(625)
