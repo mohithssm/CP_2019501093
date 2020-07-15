@@ -11,11 +11,7 @@ def fun_get_kth_digit(digit, k):
 		num  = digit % 10
 		digit = digit // 10
 		nums.append(num)
-	print(nums)
 	if (k >= len(nums)):
 		return 0
 	else:
 		return nums[k]
-
-print(fun_get_kth_digit(-789,0))
-print(fun_get_kth_digit(789,0))
