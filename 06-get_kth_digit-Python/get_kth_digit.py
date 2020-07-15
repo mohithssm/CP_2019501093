@@ -12,8 +12,4 @@ def fun_get_kth_digit(digit, k):
 		digit = digit // 10
 		nums.append(num)
 	return nums[k]
-	
-
-print(fun_get_kth_digit(789,0))
-
 
