@@ -9,11 +9,6 @@ def isperfectsquare(n):
 	if (type(n) == str or n < 0):
 		return False
 	elif (type(n) == int):
-		if type(n) == str:
-			try:
-				n = int(n)
-			except:
-				return False
 		num = math.sqrt(n)
 		if num**2 == n:
 			return True
