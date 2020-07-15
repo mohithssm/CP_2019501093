@@ -12,7 +12,7 @@ def fun_get_kth_digit(digit, k):
 		print(digit)
 		digit = digit % 10
 		sorted(nums.append(num))
-	print(nums)
+	return nums
 	# return 0
 
 fun_get_kth_digit(789,1)
