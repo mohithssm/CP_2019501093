@@ -11,8 +11,8 @@ def fun_get_kth_digit(digit, k):
 		num  = digit % 10
 		digit = digit // 10
 		nums.append(num)
-	return nums
-	# return 0
+	return nums[k]
+	
 
 print(fun_get_kth_digit(789,1))
 
