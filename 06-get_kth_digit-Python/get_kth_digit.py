@@ -11,8 +11,8 @@ def fun_get_kth_digit(digit, k):
 		num  = digit % 10
 		digit = digit // 10
 		nums.append(num)
-	if len(nums) == k:
-		return nums[k]
-	else:
-		return 0
+	
+	return nums[k]
+	# else:
+		# return 0
 
