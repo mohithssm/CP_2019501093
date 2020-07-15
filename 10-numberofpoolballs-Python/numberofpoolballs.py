@@ -10,5 +10,5 @@
 def numberofpoolballs(rows):
 	d = 1
 	a = 1
-	n = rows/2(2*a + (rows-1)*d)
+	n = (rows/2)*(2*a + (rows-1)*d)
 	return n
