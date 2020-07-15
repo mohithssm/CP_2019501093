@@ -8,8 +8,10 @@ def isperfectsquare(n):
 	# your code goes here
 	if (type(n) == str or n < 0):
 		return False
-	else:
+	elif (type(n) == int):
 		num = math.sqrt(n)
 		if num**2 == (n):
 			return True
+	else:
+		return False
 
