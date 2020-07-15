@@ -10,7 +10,7 @@ def isperfectsquare(n):
 		return False
 	elif (type(n) == int):
 		num = math.sqrt(n)
-		if num**2 == (n):
+		if num**2 == n:
 			return True
 		return False
 	else:
