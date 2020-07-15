@@ -5,14 +5,13 @@
 import math
 
 def isperfectsquare(n):
-	# your code goes here
-	if (type(n) == str or n < 0):
-		return False
-	elif (type(n) == int):
-		num = math.sqrt(n)
-		if num**2 == n:
-			return True
-		return False
+	if type(n) == str:
+		try:
+			n = int(n)
+		except:
+			return False	
+	if (type(n**2) == int and n > 0):
+		return True
 	else:
 		return False
 
