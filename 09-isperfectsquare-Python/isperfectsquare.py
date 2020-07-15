@@ -12,6 +12,7 @@ def isperfectsquare(n):
 		num = math.sqrt(n)
 		if num**2 == (n):
 			return True
+		return False
 	else:
 		return False
 
