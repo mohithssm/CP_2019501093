@@ -11,7 +11,7 @@ def fun_get_kth_digit(digit, k):
 		num  = digit // 10
 		print(digit)
 		digit = digit % 10
-		sorted(nums.append(num))
+		nums.append(num)
 	return nums
 	# return 0
 
