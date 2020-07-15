@@ -18,3 +18,4 @@ def fun_get_kth_digit(digit, k):
 		return nums[k]
 
 print(fun_get_kth_digit(-789,0))
+print(fun_get_kth_digit(789,0))
