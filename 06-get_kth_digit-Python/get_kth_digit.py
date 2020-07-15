@@ -8,8 +8,8 @@
 def fun_get_kth_digit(digit, k):
 	nums = []
 	while (digit < 0):
-		num  = digit // 10
-		digit = digit % 10
+		num  = digit % 10
+		digit = digit // 10
 		nums.append(num)
 	return nums
 	# return 0
