@@ -6,4 +6,10 @@
 
 
 def fun_get_kth_digit(digit, k):
-	return 0
+	nums = []
+	while (digit <= 0):
+		num  = digit // 10
+		digit = digit % 10
+		sorted(nums.append(digit))
+	print(nums)
+	# return 0
