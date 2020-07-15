@@ -8,23 +8,14 @@
 def fun_get_kth_digit(digit, k):
 	nums = []
 	if digit > 0:
-
-		while (digit > 0):
-			num  = digit % 10
-			digit = digit // 10
-			nums.append(num)
-		if (k >= len(nums)):
-			return 0
-		else:
-			return nums[k]
-	else: 
+		pass
+	else:
 		digit = -(digit)
-
-		while (digit > 0):
-			num  = digit % 10
-			digit = digit // 10
-			nums.append(num)
-		if (k >= len(nums)):
-			return 0
-		else:
-			return nums[k]
+	while (digit > 0):
+		num  = digit % 10
+		digit = digit // 10
+		nums.append(num)
+	if (k >= len(nums)):
+		return 0
+	else:
+		return nums[k]
