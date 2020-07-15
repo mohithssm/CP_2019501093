@@ -13,3 +13,7 @@ def fun_get_kth_digit(digit, k):
 		sorted(nums.append(num))
 	print(nums)
 	# return 0
+
+fun_get_kth_digit(789,1)
+
+
