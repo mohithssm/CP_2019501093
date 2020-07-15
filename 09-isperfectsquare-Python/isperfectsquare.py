@@ -6,9 +6,10 @@ import math
 
 def isperfectsquare(n):
 	# your code goes here
-	
-	num = math.sqrt(int(n))
-	if num**2 == int(n):
-		return True
-	else:
+	if (type(n) == str or n < 0):
 		return False
+	else:
+		num = math.sqrt(n)
+		if num**2 == (n):
+			return True
+
