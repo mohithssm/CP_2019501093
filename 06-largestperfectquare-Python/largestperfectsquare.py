@@ -13,3 +13,5 @@ def largestperfectsquare(n):
 		num = n - 1
 		v = math.sqrt(num)
 		return int(v)
+
+print(largestperfectsquare(24))	
