@@ -11,9 +11,8 @@ def hasconsecutivedigits(n):
 	else:
 		lst = [elem for elem in str(n)]
 
-	print(lst)
 	# for i in range(len(lst)):
 	# 	if lst[i] == lst[i+1]:
 	# 		return True
 	# 	return False
-hasconsecutivedigits(5231123123123)
+hasconsecutivedigits(-5231123123123)
