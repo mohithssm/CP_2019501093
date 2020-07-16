@@ -4,6 +4,6 @@
 
 def mostfrequentdigit(n):
 	n = [num for num in str(n)]
-	n.sort()
+	sorted(n)
 
 print(mostfrequentdigit(5231123123123))
