@@ -5,10 +5,4 @@
 def mostfrequentdigit(n):
 	count = 0
 	n = [num for num in str(n)]
-	num1 = n[0]
-	for elem in n:
-		curr_freq = n.count(elem)
-		if curr_freq > count:
-			count = curr_freq
-			num1 = elem
-	return num1
+	return max(set(n), n.count)
