@@ -4,8 +4,7 @@
 from collections import Counter
 
 def mostfrequentdigit(n):
-	lst=[]
-	count = 0
+
 	n = [num for num in str(n)]
 	n.sort()
 	l = dict(Counter(n))
