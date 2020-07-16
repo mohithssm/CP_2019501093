@@ -12,7 +12,7 @@ def largestperfectsquare(n):
 	if n == math.sqrt(n)**2:
 		return n
 
-	if n > 0:
+	elif n > 0:
 		num = n - 1
 		v = math.sqrt(num)
 		return (int(v)**2)
