@@ -3,6 +3,5 @@
 # that occurs most frequently in it, with ties going to the smaller digit.
 
 def mostfrequentdigit(n):
-	count = 0
 	n = [num for num in str(n)]
 	return max(set(n), n.count)
