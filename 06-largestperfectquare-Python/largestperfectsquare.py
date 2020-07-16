@@ -12,4 +12,4 @@ def largestperfectsquare(n):
 	if n > 0:
 		num = n - 1
 		v = math.sqrt(num)
-		return v
+		return int(v)
