@@ -18,6 +18,5 @@ def hasconsecutivedigits(n):
 
 		else:
 			return False
-			i = i+1
 
 
