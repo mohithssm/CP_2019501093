@@ -17,8 +17,10 @@ def fun_fabricyards(inches):
 	yard = 36
 	if inches == 0 or inches == 36:
 		return 0
-	if 0 < inches < yard:
+	elif 0 < inches < yard:
 		return 1
+	elif inches > 36:
+		return 3
 
 def fun_fabricexcess(inches):
 	# your code goes here
