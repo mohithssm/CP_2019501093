@@ -13,4 +13,4 @@ def fun_find_int_roots(a, b, c):
 	return (int(root1), int(root2))
 
 
-fun_find_int_roots(1, -5, 6)
+print(fun_find_int_roots(1, -5, 6))
