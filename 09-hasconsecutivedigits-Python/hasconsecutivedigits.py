@@ -14,5 +14,4 @@ def hasconsecutivedigits(n):
 		if lst[i] == lst[i+1]:
 			return True
 		return False
-print(hasconsecutivedigits(5231123123123))
 	
