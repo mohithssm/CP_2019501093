@@ -15,11 +15,11 @@
 def fun_fabricyards(inches):
 	# your code goes here
 
-	if inches == 0:
+	if (inches == 0):
 		return 0
-	if inches == 1 or inches < 36:
+	if (inches == 1 or inches < 36):
 		return 1
-	elif inches % 36 == 0:
+	elif (inches % 36 == 0):
 		return inches // 36 
 	else:
 		return (inches // 36) + 1
