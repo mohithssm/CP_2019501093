@@ -15,13 +15,13 @@
 # assert(ishappynumber(405) == False)
 
 def ishappynumber(n):
-	sum = 0
-	if n < 0:
-		return False
-	while n > 0:
-		rem = n%10
-		sum = sum + rem**2
-		n = n // 10
-	return sum
+	arr = []
+	while n != 1:
+		n = sum(int(i)**2 for i in str(n))
+		if n in arr:
+			return False
+		arr.append(n)
+	return True
+
 print(ishappynumber(404))
 		
