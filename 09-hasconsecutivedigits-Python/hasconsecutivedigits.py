@@ -17,5 +17,6 @@ def hasconsecutivedigits(n):
 			return True
 		else:
 			pass
+		break
 
-hasconsecutivedigits(-5231123123123)
+hasconsecutivedigits(-24)
