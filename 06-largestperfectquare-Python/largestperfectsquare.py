@@ -13,5 +13,6 @@ def largestperfectsquare(n):
 	if n > 0:
 		num = n - 1
 		v = math.sqrt(num)
-		return (int(v)**2)
+		res = (int(v)**2)
+		return res
 	
