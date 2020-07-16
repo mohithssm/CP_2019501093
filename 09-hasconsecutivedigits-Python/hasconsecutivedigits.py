@@ -18,4 +18,4 @@ def hasconsecutivedigits(n):
 		else:
 			return False
 
-
+hasconsecutivedigits(-5231123123123)
