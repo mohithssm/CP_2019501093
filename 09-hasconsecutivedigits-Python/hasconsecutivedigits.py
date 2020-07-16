@@ -10,7 +10,7 @@ def hasconsecutivedigits(n):
 		n = abs(n)
 	lst = [elem for elem in str(n)]
 	
-	for i in range(len(lst)):
+	for i in range(len(lst)-1):
 		if (len(lst) == 1):
 			return False
 		if (str(lst[i]) == str(lst[i+1])):
