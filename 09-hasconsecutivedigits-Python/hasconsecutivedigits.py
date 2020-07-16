@@ -8,7 +8,6 @@ def hasconsecutivedigits(n):
 		return False
 	if n < 0:
 		n = abs(n)
-		print(n)
 	else:
 		while n > 0:
 			num = n%10
