@@ -12,7 +12,7 @@ def digitcount(n):
 	else:
 		while (n > 0):
 			if (n < 0):
-				n == abs(n)//10
+				n == n//10
 				count=count+1
 			else:
 				n = n//10
