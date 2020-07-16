@@ -9,5 +9,5 @@ def mostfrequentdigit(n):
 	n.sort()
 	l = (dict(Counter(n)))
 	max_key = max(l, key = l.get)
-	return l	
+	return max_key	
 print(mostfrequentdigit(5312312355565))
