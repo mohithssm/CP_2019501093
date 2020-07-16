@@ -10,6 +10,4 @@ import math
 def fun_find_int_roots(a, b, c):
 	root1 = (-b) + math.sqrt(((b)**2 - 4*a*c)/2*a)
 	root2 = (-b) - math.sqrt(((b)**2 - 4*a*c)/2*a)
-	return (root1, root2)
-
-print(fun_find_int_roots(1, -5, 6))
+	return (int(root1), int(root2))
