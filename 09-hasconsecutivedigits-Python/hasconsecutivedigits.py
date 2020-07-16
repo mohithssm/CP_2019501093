@@ -17,6 +17,6 @@ def hasconsecutivedigits(n):
 			return False
 
 		else:
-			return True
+			return False
 
 
