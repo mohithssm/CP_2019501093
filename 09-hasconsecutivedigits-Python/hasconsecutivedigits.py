@@ -12,7 +12,7 @@ def hasconsecutivedigits(n):
 		n = n//10
 	return lst[::-1]
 	for i in range(len(lst)):
-		if len[i] == len[i+1]:
+		if lst[i] == lst[i+1]:
 			return True
 		return False
 print(hasconsecutivedigits(5231123123123))
