@@ -9,4 +9,4 @@ def mostfrequentdigit(n):
 	n.sort()
 	l = (dict(Counter(n)))
 	max_key = max(l, key = l.get)
-	return max_key	
+	return int(max_key)	
