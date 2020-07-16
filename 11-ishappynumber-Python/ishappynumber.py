@@ -16,7 +16,7 @@
 
 def ishappynumber(n):
 	arr = []
-	while n != 1:
+	while n != 1 and n > 0:
 		n = sum(int(i)**2 for i in str(n))
 		if n in arr:
 			return False
