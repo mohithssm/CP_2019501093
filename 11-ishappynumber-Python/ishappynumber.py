@@ -22,6 +22,3 @@ def ishappynumber(n):
 			return False
 		arr.append(n)
 	return True
-
-print(ishappynumber(404))
-		
