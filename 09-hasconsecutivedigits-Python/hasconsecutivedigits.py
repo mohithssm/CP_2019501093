@@ -10,6 +10,6 @@ def hasconsecutivedigits(n):
 		num = n%10
 		lst.append(num)
 		n = n//10
-	return lst
+	return lst[::-1]
 print(hasconsecutivedigits(5231123123123))
 	
