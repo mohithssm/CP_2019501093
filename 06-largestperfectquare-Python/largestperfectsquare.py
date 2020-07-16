@@ -16,5 +16,7 @@ def largestperfectsquare(n):
 		res = (int(v)**2)
 		if n == res**2:
 			return n
-		return res
+		else:
+			return res
 	
+print(largestperfectsquare(25))
