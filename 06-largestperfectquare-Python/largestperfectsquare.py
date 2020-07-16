@@ -11,7 +11,8 @@ import math
 def largestperfectsquare(n):
 
 	if n > 0:
-		print(math.sqrt(n)**2)
+		if n == int(math.sqrt(n)):
+			return n
 		num = n - 1
 		v = math.sqrt(num)
 		res = (int(v)**2)
