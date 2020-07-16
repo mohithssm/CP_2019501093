@@ -16,5 +16,5 @@ def hasconsecutivedigits(n):
 		if (lst[i]) == (lst[i+1]):
 			return True
 		else:
-			return Fal
-			
+			return False
+
