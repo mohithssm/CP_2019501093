@@ -14,9 +14,6 @@ def largestperfectsquare(n):
 		num = n - 1
 		v = math.sqrt(num)
 		res = (int(v)**2)
-		if n == res**2:
-			return n
-		else:
-			return res
+		return res
 	
 print(largestperfectsquare(25))
