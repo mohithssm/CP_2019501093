@@ -15,4 +15,3 @@ def largestperfectsquare(n):
 		return (int(v)**2)
 	elif n == math.sqrt(num)**2:
 		return n
-print(largestperfectsquare(14))	
