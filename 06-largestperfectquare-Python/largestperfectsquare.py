@@ -12,6 +12,6 @@ def largestperfectsquare(n):
 	if n > 0:
 		num = n - 1
 		v = math.sqrt(num)
-		return (v**2)
+		return int(v)
 
 print(largestperfectsquare(24))	
