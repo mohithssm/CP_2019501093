@@ -4,7 +4,7 @@
 
 def hasconsecutivedigits(n):
 	lst = []
-	if n == 0:
+	if n == 0 or n in "0123456789":
 		return False
 	if n < 0:
 		n = abs(n)
