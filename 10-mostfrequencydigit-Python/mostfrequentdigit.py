@@ -9,3 +9,4 @@ def mostfrequentdigit(n):
 	n.sort()
 	l = max(dict(Counter(n)))
 	return l	
+print(mostfrequentdigit(5312312355565))
