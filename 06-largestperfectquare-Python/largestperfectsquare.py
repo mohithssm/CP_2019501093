@@ -14,4 +14,4 @@ def largestperfectsquare(n):
 		v = math.sqrt(num)
 		return (int(v)**2)
 
-print(largestperfectsquare(24))	
+print(largestperfectsquare(14))	
