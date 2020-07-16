@@ -4,7 +4,7 @@
 
 def mostfrequentdigit(n):
 	count = 0
-	n = [num for elem in str(n)]
+	n = [num for num in str(n)]
 	num1 = n[0]
 	for elem in n:
 		curr_freq = n.count(elem)
