@@ -8,5 +8,5 @@ def mostfrequentdigit(n):
 	n = [num for num in str(n)]
 	n.sort()
 	l = dict(Counter(n))
-		
+	return l	
 print(mostfrequentdigit(5312312355565))
