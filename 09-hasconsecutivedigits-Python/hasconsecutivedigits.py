@@ -13,7 +13,7 @@ def hasconsecutivedigits(n):
 			return False
 	print(lst)
 	for i in range(len(lst)):
-		if (str(lst[i])) == str((lst[i+1])):
+		if (lst[i]) == (lst[i+1]):
 			return True
 		else:
 			return False
