@@ -10,3 +10,6 @@ def mostfrequentdigit(n):
 	l = (dict(Counter(n)))
 	max_key = max(l, key = l.get)
 	return max_key	
+
+print(mostfrequentdigit(5231123123123))
+print(mostfrequentdigit(5312312355565))
