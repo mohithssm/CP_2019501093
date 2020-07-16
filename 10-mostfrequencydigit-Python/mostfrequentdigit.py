@@ -4,4 +4,4 @@
 
 def mostfrequentdigit(n):
 	n = [num for num in str(n)]
-	return max(set(n), n.count)
+	return mode(n)
