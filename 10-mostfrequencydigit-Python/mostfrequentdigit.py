@@ -10,5 +10,5 @@ def mostfrequentdigit(n):
 		curr_freq = n.count(elem)
 		if curr_freq > count:
 			count = curr_freq
-			num = elem
+			num1 = elem
 	return num1
