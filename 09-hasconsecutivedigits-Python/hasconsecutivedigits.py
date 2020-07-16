@@ -11,12 +11,11 @@ def hasconsecutivedigits(n):
 	lst = [elem for elem in str(n)]
 	if (len(lst) == 1):
 			return False
-	print(lst)
-	for i in range(len(lst)):
+
+	for i in range(len(lst)-1):
 		if (lst[i]) == (lst[i+1]):
 			return True
 		else:
 			pass
-		break
 
 hasconsecutivedigits(-24)
