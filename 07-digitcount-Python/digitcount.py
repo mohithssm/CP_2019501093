@@ -10,6 +10,8 @@ def digitcount(n):
 	if n==0:
 		return 1
 	else:
+		if n < 0:
+			n = abs(n)
 		while (n > 0):
 			n = n//10
 			count=count+1
