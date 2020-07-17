@@ -5,6 +5,14 @@
 
 
 def fun_replace(s1, s2, s3):
-	pos = s1.find(s2)
-	print(pos)
-print(fun_replace("helloworld123", "hello", "345"))
+	result = []
+	index = 0
+	while True:
+		pos = s1.find(s2, s2[0] )
+		if pos == -1:
+			result.append(s1[i:])
+			return "".join(result)	
+		else:
+			result.append(s1[index:pos])
+			result.append(s3)
+			index = pos + len(s2)
