@@ -6,7 +6,7 @@
 def median(a):
 	n = len(a)
 	s = sorted(a)
-	i = (a-1)//2
+	i = (n-1)//2
 	if n == 0:
 		return None
 	elif(n%2):
