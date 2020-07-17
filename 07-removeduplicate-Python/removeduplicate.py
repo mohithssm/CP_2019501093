@@ -10,4 +10,3 @@ def removeduplicate(text):
 		if elem not in result:
 			result.append(elem)
 	return "".join(result)
-print(removeduplicate("JavaPython"))
