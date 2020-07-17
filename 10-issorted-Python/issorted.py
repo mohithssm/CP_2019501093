@@ -7,12 +7,9 @@
 
 def issorted(a):
 	flag = 0
-	if len(a) == 0 or len(a) == 1:
-		return True
-	for i in range(len(a)-1):
-		if all(a[i] <= a[i+1]):
-			flag = 1
-	if flag == 1:
+	if (all(a[i] <= a[i+1] for i in range(len(a)-1))):
+		flag = 1
+	if (flag) :
 		return True
 	else:
 		return False	
