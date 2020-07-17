@@ -8,7 +8,7 @@ def removeduplicate(text):
 	lst = list(text)
 	for i in range(len(lst)):
 		for j in range(len(lst)):
-			if lst[i] not in lst[j]:
+			if lst[i] in lst[j]:
 				l.append(lst[i])
 	return "".join(l)
 print(removeduplicate("JavaPython"))
