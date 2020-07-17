@@ -8,9 +8,9 @@ def fun_replace(s1, s2, s3):
 	result = []
 	index = 0
 	while True:
-		pos = s1.find(s2, s2[0] )
+		pos = s1.find(s2, index)
 		if pos == -1:
-			result.append(s1[i:])
+			result.append(s1[index:])
 			return "".join(result)	
 		else:
 			result.append(s1[index:pos])
