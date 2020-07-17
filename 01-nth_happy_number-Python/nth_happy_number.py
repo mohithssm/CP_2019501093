@@ -12,8 +12,12 @@
 
 
 def fun_nth_happy_number(n):
-	for i in range(n):
-		ishappynumber(n)
+	count = 1
+	while n >= 0:
+		if ishappynumber(count):
+			n = n - 1
+		count = count + 1
+	return count-1	
 def ishappynumber(n):
 	arr = []
 	if n < 0:
