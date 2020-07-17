@@ -17,5 +17,5 @@ def fun_interleave(s1,s2):
 	else:
 		first = [s1[0] + elem1 for elem1 in fun_interleave(s1[1:], s2)]
 		second = [s2[0] + elem2 for elem2 in fun_interleave(s1, s2[1:])]
-	res = first+second
+		res = first+second
 	return res
