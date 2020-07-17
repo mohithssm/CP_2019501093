@@ -13,5 +13,5 @@ def fun_interleave(s1,s2):
 	result[::2] = s1[:min_len]
 	result[1::2] = s2[:min_len]
 	result = result + s1[min_len:] + s2[min_len:]
-	out = (''.join((result)))
+	out = (''.join(result))
 	return out
