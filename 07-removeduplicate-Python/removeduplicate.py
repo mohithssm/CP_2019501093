@@ -9,5 +9,5 @@ def removeduplicate(text):
 	for elem in lst:
 		if elem not in result:
 			result.append(elem)
-	return result
+	return "".join(result)
 print(removeduplicate("JavaPython"))
