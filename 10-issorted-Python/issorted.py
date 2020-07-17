@@ -12,5 +12,5 @@ def issorted(a):
 	for i in range(len(a)-1):
 		if all(a[i] <= a[i+1]):
 			return True
-	else:
-		return False
+		else:
+			return False
