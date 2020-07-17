@@ -11,7 +11,9 @@ def issorted(a):
 		return True
 	for i in range(len(a)):
 		count = count + 1
-		if a[i]<=a[i+1] or a[i]>=a[i+1]:
+		if a[i]<=a[i+1]:
+			return True
+		if a[i]>=a[i+1]:
 			return True
 		else:
 			return False
