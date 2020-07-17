@@ -11,7 +11,15 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-	return ""
+	encod = ""
+	for elem in msg:
+		if (elem == " "):
+			encod = encod + elem
+		elif (elem.isupper()):
+			encod = encod + chr((ord(elem) + shift - 65) % 65+26)
+		else:
+			encod = encod + chr((ord(elem) + shift - 97) % 97+26)
+
 
 
 
