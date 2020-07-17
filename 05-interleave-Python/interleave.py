@@ -9,5 +9,6 @@
 
 def fun_interleave(s1,s2):
 	res = "".join(elem1+ elem2 for elem1, elem2 in zip(s1, s2))
+	return res
 print(fun_interleave("pto", "yhn"))
 	
