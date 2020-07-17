@@ -10,12 +10,10 @@ def issorted(a):
 	if len(a) == 0 or len(a) == 1:
 		return True
 	for i in range(len(a)):
-		count = count + 1
 		if a[i]<=a[i+1]:
 			return True
 		if a[i]>=a[i+1]:
 			return True
 		else:
 			return False
-	print(count)
 print(issorted([-1, 0, -1.1]))
