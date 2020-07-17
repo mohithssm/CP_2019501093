@@ -8,5 +8,10 @@
 
 
 def fun_interleave(s1,s2):
-	return ""
+	res = ""
+	for elem1 in s1:
+		for elem2 in s2:
+			res = elem1+elem2
+	return res
+
 	
