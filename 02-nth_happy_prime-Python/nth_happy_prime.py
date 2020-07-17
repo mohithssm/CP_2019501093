@@ -4,7 +4,7 @@
 
 
 
-def fun_nth_happy_number(n):
+def fun_nth_happy_prime(n):
 	count = 1
 	while n>= 0:
 		if ishappynumber(count) and isprimeNum(count):
@@ -32,6 +32,3 @@ def isprimeNum(n):
 		return True
 	else:
 		return False
-
-def fun_nth_happy_prime(n):
-	return 0
