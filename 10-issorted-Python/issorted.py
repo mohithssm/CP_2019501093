@@ -13,4 +13,3 @@ def issorted(a):
 		return True
 	else:
 		return False
-print(issorted([-1, 0, -1.1]))
