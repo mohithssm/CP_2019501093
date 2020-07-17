@@ -14,4 +14,5 @@ def fun_interleave(s1,s2):
 			res = elem1+elem2
 	return res
 
+print(fun_interleave("pto", "yhn"))
 	
