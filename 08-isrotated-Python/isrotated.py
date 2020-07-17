@@ -6,4 +6,8 @@
 
 def isrotated(str1, str2):
 	res = str1[-1:] + str1[:-1]
+	if "".join(res) == str2:
+		return True
+	else:
+		return False
 print(isrotated("12345", "51234"))
