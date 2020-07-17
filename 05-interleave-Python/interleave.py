@@ -8,10 +8,5 @@
 
 
 def fun_interleave(s1,s2):
-	min_len = min(len(s1), len(s2))
-	result = [''] * min_len * 2
-	result[::2] = s1[:min_len]
-	result[1::2] = s2[:min_len]
-	result = result + s1[min_len:] + s2[min_len:]
-	out = (''.join(result))
-	return out
+	res = ''.join(''.join(elem) for elem in zip(s1, s2))
+	return res
