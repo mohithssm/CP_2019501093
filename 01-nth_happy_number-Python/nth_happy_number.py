@@ -29,4 +29,4 @@ def ishappynumber(n):
 		arr.append(n)
 	return True
 
-fun_nth_happy_number(2)
+print(fun_nth_happy_number(2))
