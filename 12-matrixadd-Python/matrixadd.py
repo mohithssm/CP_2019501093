@@ -22,7 +22,6 @@ def matrixadd(L, M):
 			for j in range(len(M)):
 				result[i][j] = L[i][j] + M[i][j]
 		return result
-	elif len(L) == 1 and len(M) == 1:
-		return sum(L[0]+M[0])
+
 	else:
 		return None
