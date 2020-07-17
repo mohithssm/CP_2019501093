@@ -5,7 +5,6 @@
 
 
 def fun_replace(s1, s2, s3):
-	if s2 in s1:
-		return True
-	return False
+	pos = s1.find(s2)
+	print(pos)
 print(fun_replace("helloworld123", "hello", "345"))
