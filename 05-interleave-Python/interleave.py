@@ -4,10 +4,10 @@
 # If one string is longer than the other, concatenate the rest of the remaining 
 # string onto the end of the new string. For example ('a#', 'cD!f2') would return 
 # the string "ac#D!f2". Assume that both s1 and s2 will always be strings.
-
+from itertools import chain
 
 
 def fun_interleave(s1,s2):
-	res = "".join(elem1+ elem2 for elem1, elem2 in zip(s1, s2))
+	res = "".join(list(chain.from_iterable(zip(s1, s2))))
 	return res
 	
