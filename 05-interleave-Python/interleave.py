@@ -8,5 +8,11 @@
 
 
 def fun_interleave(s1,s2):
-	res = ''.join(''.join(elem) for elem in zip(s1, s2))
-	return res
+	if len(s1) == 0 and len(s2) == 0:
+		return []
+	elif len(s1) == 0:
+		return s2
+	elif len(s2) == 0:
+		return s1
+	first = [s1[0] + elem1 for elem1 in fun_interleave(s1[1:], s2)]
+	second = [s2[0] + elem2 for elem2 in fun_interleave(s1, s2[1:])]
