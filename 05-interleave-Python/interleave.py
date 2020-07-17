@@ -8,7 +8,9 @@
 
 
 def fun_interleave(s1,s2):	
-	first = [s1[0] + elem1 for elem1 in fun_interleave(s1[1:], s2)]
-	second = [s2[0] + elem1 for elem1 in fun_interleave(s1, s2[1:])]
-	res = first+second
-	return res
+	if len(s1) == 0:
+		return s2
+	elif len(s2) == 0:
+		return s1
+	else:
+		return s1[0]+s2[0]+fun_interleave(s1[1:], s2[1:])
