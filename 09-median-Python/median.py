@@ -4,8 +4,8 @@
 # element. If the list is empty, return None.
 
 def median(a):
-	n = len(a)
 	s = sorted(a)
+	n = len(a)
 	i = (n-1)//2
 	if n == 0:
 		return None
