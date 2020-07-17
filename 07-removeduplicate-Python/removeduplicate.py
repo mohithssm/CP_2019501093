@@ -4,11 +4,9 @@
 # The second or further occurrence of duplicate should be removed.
 
 def removeduplicate(text):
-	l = []
+	result = []
 	lst = list(text)
-	for i in range(len(lst)):
-		for j in range(len(lst)):
-			if lst[j] not in lst[i]:
-				l.append(lst[i])
-	return "".join(l)
+	for elem in lst:
+		if elem not in result:
+			result.append(elem)
 print(removeduplicate("JavaPython"))
