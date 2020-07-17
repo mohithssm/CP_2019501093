@@ -6,11 +6,10 @@
 # the list.
 
 def issorted(a):
-	count = 0
+	flag = 0
 	if len(a) == 0 or len(a) == 1:
 		return True
 	for i in range(len(a)-1):
 		if all(a[i] <= a[i+1]):
-			return True
-		else:
-			return False
+			flag = 1
+	
