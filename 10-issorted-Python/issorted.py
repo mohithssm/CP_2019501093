@@ -15,5 +15,5 @@ def issorted(a):
 			return True
 		else:
 			return False
-
+	print(count)
 print(issorted([-1, 0, -1.1]))
