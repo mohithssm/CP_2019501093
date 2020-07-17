@@ -9,9 +9,11 @@
 
 def fun_interleave(s1,s2):
 	res = ""
+	res1 = ""
 	for elem1 in s1:
 		for elem2 in s2:
-			res = elem1+elem2
+			res1 = elem1 + elem2
+		res = res + res1
 	return res
 
 print(fun_interleave("pto", "yhn"))
