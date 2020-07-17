@@ -19,6 +19,7 @@ def fun_applycaesarcipher(msg, shift):
 			encod = encod + chr((ord(elem) + shift - 65) % 65+26)
 		else:
 			encod = encod + chr((ord(elem) + shift - 97) % 97+26)
+	return encod
 
 
 
