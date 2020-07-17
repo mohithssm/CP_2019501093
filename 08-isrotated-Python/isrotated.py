@@ -5,5 +5,5 @@
 
 
 def isrotated(str1, str2):
-	#Your code goes here
-	pass
+	res = str1[-1:] + str1[:-1]
+print(isrotated("12345", "51234"))
