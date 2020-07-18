@@ -7,11 +7,11 @@
 def smallestdifference(a):
 	if len(a) == 0:
 		return -1
-	elif len(a) <= -1:
-		a.sort()
-		minDiff = a[1] - a[0]
-	for i in range(1, len(a)):
-		if (a[i] - a[i-1]) == minDiff:
-			return True
-		else:
-			return False
+	else:
+		small_difference = 10 ** 10
+		a = sorted(a)
+		for i in range(len(a) - 1):
+			if abs(a[i+1] - a[i]) < small_difference:
+				small_difference = a[i+1] - a[i]
+		return small_difference
+	
