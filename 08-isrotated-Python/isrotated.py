@@ -5,8 +5,13 @@
 
 
 def isrotated(str1, str2):
-	res = str1[1:] + str1[0]
-	if "".join(res) == str2:
+	st1 = str1[::-1]
+	st2 = str2[::-1]
+	for i in range (len(str1)):
+		if( (str2[i:] + str2[:i]) == str1 or (str1[i:] + str1[:i]) == str2):
+			return True
+
+	if st1 == str2 and st2 == str1:
 		return True
 	else:
 		return False
