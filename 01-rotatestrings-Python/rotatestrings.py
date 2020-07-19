@@ -7,5 +7,12 @@
 
 
 def fun_rotatestrings(s, n):
-	return s
+	arr = []
+	for i in range(len(s)):
+		m = (str(s)[i:] + str(s)[:i])
+		arr.append(m)
+	if n in arr:
+		return True
+	else:
+		return False
 
