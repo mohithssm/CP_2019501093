@@ -39,8 +39,5 @@ def is_palindrome(n):
 
 
 print(fun_nth_palindromic_prime(1))
-# print(fun_nth_palindromic_prime(15))
-# print(fun_nth_palindromic_prime(20))
-# print(fun_nth_palindromic_prime(25))
 
 
