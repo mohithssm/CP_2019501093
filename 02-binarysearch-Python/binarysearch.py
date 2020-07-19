@@ -11,22 +11,22 @@ Return the index of value, or -1 if the value
 doesn't exist in the list."""
 
 def binary_search(input_array, value):
-    result = binary(input_array, 0, value, len(input_array)-1)
+    result = binary(input_array, 0, len(input_array)-1,  value)
     if result != -1:
         return result
     else:
         return None
 
-def binary(input_array, low, value, high):
+def binary(input_array, low, high, value):
     while low <= high:
-        mid = 1 + (high - 1)//2
+        mid = (low + high)//2
         print("this is mid value", mid)
         if input_array[mid] == value:
             return mid
-        elif input_array[mid] < value:
+        if input_array[mid] < value:
             low = mid + 1
         else:
             high = mid - 1
     return -1
     
-print(binary_search([1,3,9,11,15,19,29], 11))
+print(binary_search([1,3,9,11,15,19,29], 25))
