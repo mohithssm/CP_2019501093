@@ -13,6 +13,8 @@
 
 def fun_isfactorish(n):
 	num_lst = []
+	if n < 0:
+		n = abs(n)
 	while n > 0:
 		digit = n % 10
 		n = n // 10
@@ -24,5 +26,5 @@ def fun_isfactorish(n):
 		return False 
 
 
-print(fun_isfactorish(412))
+print(fun_isfactorish(-412))
 
