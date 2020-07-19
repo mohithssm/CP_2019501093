@@ -37,14 +37,14 @@ class LinkedList(object):
         Return "None" if position is not in the list."""
         # Your code goes here
         if self.head:
-            cnt = 1
+            c = 1
             current = self.head
-            if cnt == position:
+            if c == position:
                 return current
-            while position > cnt and current.next:
+            while position > c and current.next:
                 current = current.get_next
-                cnt = cnt + 1
-                if cnt == position:
+                c = c + 1
+                if c == position:
                     return current
             return None
         else:
@@ -57,11 +57,11 @@ class LinkedList(object):
         the 2nd and 3rd elements."""
         # Your code goes here
         if self.head:
-            cnt = 1
+            c = 1
             current = self.head
-            while position - 1 > cnt:
+            while position - 1 > c:
                 current = current.get_next()
-                cnt = cnt + 1
+                c = c + 1
             temp_var = current.get_next()
             current.next = new_element
             current.next.next = temp_var
