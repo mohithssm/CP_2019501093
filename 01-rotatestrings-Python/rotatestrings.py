@@ -7,9 +7,9 @@
 
 
 def fun_rotatestrings(s, n):
-	l1 = s[0:n]
+	l1 = s[:n]
 	l2 = s[n: ]
-	r1 = s[0: len(s)-n]
+	r1 = s[: len(s)-n]
 	r2 = s[len(s)-n: ]
 
 	if True:
