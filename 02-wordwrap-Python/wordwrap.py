@@ -25,5 +25,6 @@ def fun_wordwrap(s, n):
 		x = x+4
 		n = n+4
 	st = "".join(arr)
+	res = st.replace(" ", "-")
 	return st
 print(fun_wordwrap(' a b c de fgh', 4))
