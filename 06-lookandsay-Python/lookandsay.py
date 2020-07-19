@@ -15,6 +15,7 @@ def lookandsay(a):
 		x = 0
 		if a[i] == a[x]:
 			count = count + 1
+			t1 = (count, a[i])
 
 		else:
 			t1 = (count, a[i])
