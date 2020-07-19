@@ -6,6 +6,15 @@
 
 
 def fun_alternatingsum(a): 
-	return 0
+	total = 0
+	if len(a) == 0:
+		return 0
+	else:
+		for i in range(len(a)):
+			if i%2 == 0:
+				total = total + a[i]
+			else:
+				total = total - a[i]
+		return total
 
-
+print(fun_alternatingsum([5,3,8,4]))
