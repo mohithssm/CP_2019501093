@@ -9,11 +9,11 @@
 def fun_nth_additive_prime(n):
 	lst = []
 	if fun_is_prime(n):
-		print(n)
+		# print(n)
 		while n > 0:
 			digit = n % 10
-			n = n // 10
-			lst.append(n)
+			n = n // 10	
+			lst.append(digit)
 		print(lst)
 		total = sum(lst)
 
