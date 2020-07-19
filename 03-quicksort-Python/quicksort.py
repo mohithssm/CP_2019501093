@@ -4,6 +4,7 @@ Output a sorted list."""
 def quicksort(array):
 
 	sort(array, 0, len(array) - 1)
+	return array
 
 def sort(array, low, high):
 	if low < high:
