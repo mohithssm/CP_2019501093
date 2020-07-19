@@ -19,7 +19,7 @@
 def fun_wordwrap(s, n):
 	arr = []
 	x = 0
-	for i in range(len(s), n):
+	for i in range(0, len(s), n):
 		arr.append(s[x:n])
 		x = x+4
 	return arr
