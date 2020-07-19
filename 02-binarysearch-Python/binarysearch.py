@@ -22,4 +22,10 @@ def binary_search(input_array, value):
 
         else:
             high = mid - 1
-    return -1 
+    return -1
+    
+    result = binary_search(input_array, value)
+    if result != -1:
+        return result
+    else:
+        return None
