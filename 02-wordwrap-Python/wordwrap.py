@@ -22,7 +22,7 @@ def fun_wordwrap(s, n):
 	for i in range(len(st_list)):
 		arr.append(st_list[:n])
 	return arr
-fun_wordwrap('abcdefghi', 4)
+print(fun_wordwrap('abcdefghi', 4))
 
 
  
