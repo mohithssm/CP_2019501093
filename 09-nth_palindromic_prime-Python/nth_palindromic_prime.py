@@ -35,3 +35,13 @@ def is_palindrome(n):
 		return True
 	else:
 		return False
+
+
+print(fun_nth_palindromic_prime(0))
+print(fun_nth_palindromic_prime(1))
+print(fun_nth_palindromic_prime(10))
+print(fun_nth_palindromic_prime(15))
+print(fun_nth_palindromic_prime(20))
+print(fun_nth_palindromic_prime(25))
+
+
