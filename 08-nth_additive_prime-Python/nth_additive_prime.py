@@ -13,7 +13,7 @@ def fun_nth_additive_prime(n):
 			n = n - 1	
 		count = count + 1
 
-	return count
+	return count - 1
 
 
 def fun_is_prime(n):
