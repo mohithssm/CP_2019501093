@@ -38,4 +38,4 @@ def addictive_number(n):
 	else:
 		return False
 
-print(fun_nth_additive_prime(5))
+print(fun_nth_additive_prime(20))
