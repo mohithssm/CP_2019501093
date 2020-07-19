@@ -24,7 +24,7 @@ def fun_wordwrap(s, n):
 		arr.append(s[x:n])
 		x = x+4
 		n = n+4
-	st = "".join(arr)
+	st = "/n".join(arr)
 	res = st.replace(" ", "-")
 	return res
 
