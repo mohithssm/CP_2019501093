@@ -33,4 +33,4 @@ def fun_is_prime(n):
 		return False
 
 
-print(fun_nth_additive_prime(7))
+print(fun_nth_additive_prime(25))
