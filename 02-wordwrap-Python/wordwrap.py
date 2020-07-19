@@ -25,6 +25,4 @@ def fun_wordwrap(s, n):
 		n = n+4
 	return arr
 print(fun_wordwrap(' a b c de fgh', 4))
-
-
  
