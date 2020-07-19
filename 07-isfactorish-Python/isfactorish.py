@@ -28,5 +28,5 @@ def fun_isfactorish(n):
 		return False 
 
 
-print(fun_isfactorish(4128))
+print(fun_isfactorish(112))
 
