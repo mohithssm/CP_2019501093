@@ -7,20 +7,13 @@
 
 
 def fun_nth_additive_prime(n):
-	lst = []
-	if fun_is_prime(n):
-		
-		while n > 0:
-			digit = n % 10
-			n = n // 10	
-			lst.append(digit)
-		total = sum(lst)
-		if fun_is_prime(total):
-			return total
-		else:
-			return False
-	else: 
-		return False
+	count = 1
+
+	while n >= 0:
+		if fun_is_prime(n) and addictive_prime(n):
+			n = n - 1
+		count = count + 1
+	return count - 1
 
 def fun_is_prime(n):
 	if n > 1:
@@ -32,3 +25,13 @@ def fun_is_prime(n):
 	else:
 		return False
 
+def addictive_prime(n):
+	lst = []
+	while n > 0:
+		digit = n % 10
+		n = n // 10	
+		lst.append(digit)
+	total = sum(lst)
+	if fun_is_prime(total):
+		return n
+	return -1
