@@ -19,7 +19,7 @@
 def fun_wordwrap(s, n):
 	st_list = list(s)
 	arr = []
-	for i in range(len(st_list)):
+	for i in range(0, len(st_list), n):
 		arr.append(st_list[:n])
 	return arr
 print(fun_wordwrap('abcdefghi', 4))
