@@ -12,7 +12,7 @@ def fun_nth_additive_prime(n):
 		if fun_is_prime(count) and addictive_number(count):
 			n = n - 1
 		count = count + 1
-	return count
+	return count - 1
 
 
 def fun_is_prime(n):
