@@ -21,3 +21,6 @@ def partition(array, low, high):
 			array[i], array[j] = array[j], array[i] 
 	array[i+1], array[high] = array[high], array[i+1]
 	return (i+1)
+
+
+print(quicksort([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
