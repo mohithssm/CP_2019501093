@@ -19,9 +19,9 @@
 def fun_wordwrap(s, n):
 	arr = []
 	for i in range(0, len(s), n):
-		for n in range(n, len(s)):
+		for x in range(n, len(s)):
 			arr.append(s[:n])
-			n = n + 4
+			x = x + 4
 	return arr
 print(fun_wordwrap('abcdefghi', 4))
 
