@@ -10,9 +10,9 @@ def fun_nth_additive_prime(n):
 	count = 1
 	while n >= 0:
 		if fun_is_prime(count) and addictive_number(count):
-			count = count + 1
-		else:
-			break
+			n = n - 1	
+		count = count + 1
+
 	return count
 
 
