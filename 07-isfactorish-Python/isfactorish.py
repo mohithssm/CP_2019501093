@@ -20,7 +20,7 @@ def fun_isfactorish(n):
 		n = n // 10
 		num_lst.append(digit)
 	num_lst = num_lst[::-1]
-	if len(num_lst) > 3 or num_lst[0] == 0 or num_lst[1] == 0 or num_lst[2] == 0:
+	if len(num_lst) > 3 or len(num_lst) < 3 or num_lst[0] == 0 or num_lst[1] == 0 or num_lst[2] == 0:
 		return False
 	elif num_lst[0] == num_lst[1] or  num_lst[1] == num_lst[2] or num_lst[0] == num_lst[2]:
 		return False
@@ -30,5 +30,5 @@ def fun_isfactorish(n):
 		return False 
 
 
-print(fun_isfactorish(420))
+print(fun_isfactorish(42))
 
