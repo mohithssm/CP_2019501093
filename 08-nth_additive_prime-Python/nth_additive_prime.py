@@ -8,19 +8,12 @@
 
 def fun_nth_additive_prime(n):
 	count = 1
-
-	while n > 0:
-		if fun_is_prime(n):
-			lst = []
-			while n > 0:
-				digit = n % 10
-				n = n // 10	
-				lst.append(digit)
-			total = sum(lst)
-			if fun_is_prime(total):
-				n = n - 1
+	while n >= 0:
+		if fun_is_prime(count):
+			n = n - 1
 		count = count + 1
 	return count - 1
+
 
 def fun_is_prime(n):
 	if n > 1:
@@ -33,4 +26,4 @@ def fun_is_prime(n):
 		return False
 
 
-print(fun_nth_additive_prime(7))
+print(fun_nth_additive_prime(25))
