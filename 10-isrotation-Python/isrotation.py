@@ -6,5 +6,12 @@
 # is a rotation of itself.
 
 def isrotation(x, y):
-	# Your code goes here
-	pass
+	x = list(x)
+	y = list(y)
+	zero = 0
+	if len(x) != len(y):
+		return False
+	elif zero in x or zero in y:
+		return False
+	else:
+		pass	
