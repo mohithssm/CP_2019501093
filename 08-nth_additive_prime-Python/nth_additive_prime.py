@@ -33,7 +33,7 @@ def addictive_prime(n):
 		lst.append(digit)
 	total = sum(lst)
 	if fun_is_prime(total):
-		return n
+		return True
 	return False
 
 print(fun_nth_additive_prime(0))
