@@ -18,4 +18,4 @@ def isrotation(x, y):
 	else:
 		return False
 
-print(isrotation(3412, 1234))
+print(isrotation(431256789, 123456789))
