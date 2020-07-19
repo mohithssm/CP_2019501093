@@ -22,6 +22,8 @@ def fun_isfactorish(n):
 	num_lst = num_lst[::-1]
 	if len(num_lst) > 3:
 		return False
+	if num_lst[0] == num_lst[1] == num_lst[2]:
+		return true
 	if  n % num_lst[0] == 0 and  n % num_lst[1] == 0 and n % num_lst[2] == 0:
 		return True
 	else:
