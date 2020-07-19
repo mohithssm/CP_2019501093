@@ -20,7 +20,7 @@ def fun_wordwrap(s, n):
 	arr = []
 	x = 0
 	for i in range(0, len(s)):
-		arr.append(s[x::])
+		arr.append(s[x:])
 		x = x+4
 	return arr
 print(fun_wordwrap('abcdefghi', 4))
