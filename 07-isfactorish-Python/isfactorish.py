@@ -17,7 +17,9 @@ def fun_isfactorish(n):
 		digit = n % 10
 		n = n // 10
 		num_lst.append(digit)
-	print(num_lst[::-1])
+	num_lst = num_lst[::-1]
+	print()
+
 
 print(fun_isfactorish(412))
 
