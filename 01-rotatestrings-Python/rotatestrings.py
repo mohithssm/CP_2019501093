@@ -12,7 +12,7 @@ def fun_rotatestrings(s, n):
 	r1 = s[: len(s)-n]
 	r2 = s[len(s)-n: ]
 
-	if True:
+	if n <= len(s):
 		return l2+l1
 	else:
-		return r2+r1
+		pass
