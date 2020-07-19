@@ -14,5 +14,7 @@ def lookandsay(a):
 	for i in range(len(a)):
 		if a[i] == a[0]:
 			count = count + 1
-	lst.append(a[i], count)
-	return (lst)	 
+	t1 = (a[i], count)
+	lst.append(t1)
+	return (lst)
+print(lookandsay([1,1,1]))	 
