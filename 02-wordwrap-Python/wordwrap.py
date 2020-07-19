@@ -28,5 +28,5 @@ def fun_wordwrap(s, n):
 	res = st.replace(" ", "-")
 	return res
 
-print(fun_wordwrap(" a b c de fgh ", 4))
-#a-b-\nc-de\n-fgh
+# print(fun_wordwrap(" a b c de fgh ", 4))
+
