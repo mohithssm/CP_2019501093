@@ -9,7 +9,7 @@
 def fun_nth_additive_prime(n):
 	count = 1
 
-	while n >= 0:
+	while n > 0:
 		if fun_is_prime(n) and addictive_prime(n):
 			n = n - 1
 		count = count + 1
@@ -35,3 +35,5 @@ def addictive_prime(n):
 	if fun_is_prime(total):
 		return n
 	return False
+
+print(fun_nth_additive_prime(0))
