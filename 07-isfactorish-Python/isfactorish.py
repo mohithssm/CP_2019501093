@@ -30,5 +30,3 @@ def fun_isfactorish(n):
 		return False 
 
 
-print(fun_isfactorish(315))
-
