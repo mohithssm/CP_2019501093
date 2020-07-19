@@ -10,7 +10,6 @@ def isrotation(x, y):
 	temp = 0
 	for i in range(len(x_st)):
 		m = int(str(x)[i:] + str(x)[:i])
-		print(m)
 		temp = temp +  m
 	if temp != y:
 		return False
