@@ -18,15 +18,17 @@ def binary_search(input_array, value):
         return None
 
 def binary(input_array, low, high, value):
+    
     while low <= high:
         mid = (low + high)//2
-        print("this is mid value", mid)
-        if input_array[mid] == value:
-            return mid
+
         if input_array[mid] < value:
             low = mid + 1
-        else:
+        elif input_array[mid] > value:
             high = mid - 1
+        else:
+            return mid
+            
     return -1
     
 print(binary_search([1,3,9,11,15,19,29], 25))
