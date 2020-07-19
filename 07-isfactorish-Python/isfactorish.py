@@ -23,7 +23,7 @@ def fun_isfactorish(n):
 	if len(num_lst) > 3:
 		return False
 	if num_lst[0] == num_lst[1] == num_lst[2]:
-		return true
+		return False
 	if  n % num_lst[0] == 0 and  n % num_lst[1] == 0 and n % num_lst[2] == 0:
 		return True
 	else:
