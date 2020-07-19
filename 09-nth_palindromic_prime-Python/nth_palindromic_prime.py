@@ -38,6 +38,6 @@ def is_palindrome(n):
 		return False
 
 
-print(fun_nth_palindromic_prime(1))
+print(fun_nth_palindromic_prime(10))
 
 
