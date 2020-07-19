@@ -6,9 +6,17 @@
 # is a rotation of itself.
 
 def isrotation(x, y):
-	x = list(x)
-	y = list(y)
+	lst1 = []
+	lst2 = []
 	zero = 0
+
+	while x >= 0 or y >=0:
+		rem1 = x % 10
+		rem2 = y % 10
+		x = x // 10
+		y = y // 10
+		lst.appen(rem1)
+		lst.appen(rem2)
 	if len(x) != len(y):
 		return False
 	elif zero in x or zero in y:
