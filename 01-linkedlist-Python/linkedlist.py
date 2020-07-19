@@ -78,6 +78,6 @@ class LinkedList(object):
             current = None
         while current:
             if current.value == value:
-                previous.next = current.get_next()
+                previous.next = current.get_next
             previous = current
             current = current.next
