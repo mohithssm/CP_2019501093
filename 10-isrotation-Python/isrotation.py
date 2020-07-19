@@ -6,25 +6,16 @@
 # is a rotation of itself.
 
 def isrotation(x, y):
-	lst1 = []
-	lst2 = []
-	temp = ''
-
-	# while x > 0:
-	# 	rem1 = x % 10
-	# 	x = x // 10
-	# 	lst1.append(rem1)
-	# while y > 0:
-	# 	rem2 = y % 10
-	# 	y = y // 10
-	# 	lst2.append(rem2)
-
-	# if len(lst1) != len(lst2):
-	# 	return 0
-	# else:
-
-	for i in range(len(lst1)):
+	x_st = str(x)
+	print(x_st)
+	temp = 0
+	for i in range(len(x_st)):
 		m = int(str(x)[i:] + str(x)[:i])
+		print(m)
 		temp = temp +  m
-	return temp
+	if temp != y:
+		return False
+	else:
+		return True
+
 print(isrotation(3412, 1234))
