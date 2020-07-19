@@ -16,8 +16,7 @@ def fun_nth_additive_prime(n):
 			lst.append(digit)
 		print(lst)
 		total = sum(lst)
-
-		print(total)
+		# print(total)
 		if fun_is_prime(total):
 			return total
 		else:
