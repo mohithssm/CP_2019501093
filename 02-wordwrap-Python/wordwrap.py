@@ -28,4 +28,4 @@ def fun_wordwrap(s, n):
 	res = st.replace(" ", "-")
 	return res
 
-print(fun_wordwrap("  abcdefghij", 4))
+print(fun_wordwrap(" a b c de fgh ", 4))
