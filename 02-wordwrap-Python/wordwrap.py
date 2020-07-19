@@ -27,3 +27,5 @@ def fun_wordwrap(s, n):
 	st = "".join(arr)
 	res = st.replace(" ", "-")
 	return res
+
+print(fun_wordwrap("  abcdefghij", 4))
