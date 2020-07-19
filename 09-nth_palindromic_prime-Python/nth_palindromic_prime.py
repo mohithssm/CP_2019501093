@@ -9,6 +9,7 @@
 def fun_nth_palindromic_prime(n):
 	count = 1
 	while n >= 0:
+		print(count)
 		if  is_palindrome(count) and fun_is_prime(count):
 			n = n - 1
 		count = count + 1
