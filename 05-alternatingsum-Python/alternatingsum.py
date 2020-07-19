@@ -17,4 +17,3 @@ def fun_alternatingsum(a):
 				total = total - a[i]
 		return total
 
-print(fun_alternatingsum([1, 2, 3, 4]))
