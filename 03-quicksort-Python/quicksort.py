@@ -3,8 +3,8 @@ Input a list.
 Output a sorted list."""
 def quicksort(array):
 
-	sort(array, 0, len(array) - 1)
-	return array
+	arr = sort(array, 0, len(array) - 1)
+	return arr
 
 def sort(array, low, high):
 	if low < high:
