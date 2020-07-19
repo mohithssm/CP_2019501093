@@ -13,9 +13,9 @@ def isrotation(x, y):
 		# print(m)
 		arr.append(m)
 	print(arr)
-	if arr != y:
-		return False
-	else:
+	if y in arr:
 		return True
+	else:
+		return False
 
 print(isrotation(3412, 1234))
