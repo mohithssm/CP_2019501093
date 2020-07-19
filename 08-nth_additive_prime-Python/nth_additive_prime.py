@@ -34,4 +34,4 @@ def addictive_prime(n):
 	total = sum(lst)
 	if fun_is_prime(total):
 		return n
-	return -1
+	return False
