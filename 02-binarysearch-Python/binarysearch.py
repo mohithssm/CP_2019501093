@@ -31,4 +31,4 @@ def binary(input_array, low, high, value):
             
     return -1
     
-print(binary_search([1,3,9,11,15,19,29], 25))
+print(binary_search([1,3,9,11,15,19,29], 19))
