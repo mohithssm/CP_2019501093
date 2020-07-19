@@ -7,7 +7,6 @@
 
 def isrotation(x, y):
 	x_st = str(x)
-	print(x_st)
 	temp = 0
 	for i in range(len(x_st)):
 		m = int(str(x)[i:] + str(x)[:i])
