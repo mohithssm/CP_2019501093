@@ -8,11 +8,13 @@
 def isrotation(x, y):
 	x_st = str(x)
 	temp = 0
-	temp_arr = []
 	for i in range(len(x_st)):
 		m = int(str(x)[i:] + str(x)[:i])
+		print(m)
 		temp = temp +  m
-		temp_arr.append(temp)
-	return temp_arr
+	if temp != y:
+		return False
+	else:
+		return True
 
 print(isrotation(3412, 1234))
