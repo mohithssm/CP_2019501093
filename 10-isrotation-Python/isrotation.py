@@ -10,9 +10,11 @@ def isrotation(x, y):
 	arr = []
 	for i in range(len(x_st)):
 		m = int(str(x)[i:] + str(x)[:i])
+		print(m)
 		arr.append(m)
 	if y in arr:
 		return True
 	else:
 		return False
 
+print(isrotation('12345', '54321'))
