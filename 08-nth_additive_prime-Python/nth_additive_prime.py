@@ -29,3 +29,6 @@ def fun_is_prime(n):
 		return True
 	else:
 		return False
+
+
+print(fun_nth_additive_prime(113))
