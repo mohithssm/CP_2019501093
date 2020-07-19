@@ -15,7 +15,7 @@ def binary_search(input_array, value):
     if result != -1:
         return result
     else:
-        return None
+        return -1
 
 def binary(input_array, low, high, value):
     
