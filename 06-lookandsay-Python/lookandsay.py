@@ -12,7 +12,8 @@ def lookandsay(a):
 	lst = []
 
 	for i in range(len(a)):
-		if a[i] == a[0]:
+		x = 0
+		if a[i] == a[x]:
 			count = count + 1
 			t1 = (count, a[i])
 			lst.append(t1)
