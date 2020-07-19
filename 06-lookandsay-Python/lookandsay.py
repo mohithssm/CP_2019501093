@@ -14,7 +14,10 @@ def lookandsay(a):
 	for i in range(len(a)):
 		if a[i] == a[0]:
 			count = count + 1
+		else:
+			count = 0
 	t1 = (count, a[i])
+
 	lst.append(t1)
 	return (lst)
 print(lookandsay([-1,2,7]))	 
