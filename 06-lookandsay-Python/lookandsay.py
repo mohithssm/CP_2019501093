@@ -17,4 +17,4 @@ def lookandsay(a):
 	t1 = (count, a[i])
 	lst.append(t1)
 	return (lst)
-print(lookandsay([1,1,1]))	 
+print(lookandsay([-1,2,7]))	 
