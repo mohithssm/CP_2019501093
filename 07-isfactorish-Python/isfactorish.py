@@ -12,5 +12,12 @@
 
 
 def fun_isfactorish(n):
-	return False
+	num_lst = []
+	while n > 0:
+		digit = n % 10
+		n = n // 10
+		num_lst.append(digit)
+	print(num_lst)
+
+print(fun_isfactorish(412))
 
