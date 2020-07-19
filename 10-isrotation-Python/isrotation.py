@@ -8,18 +8,16 @@
 def isrotation(x, y):
 	lst1 = []
 	lst2 = []
-	zero = 0
 
-	while x >= 0 or y >=0:
+	while x > 0:
 		rem1 = x % 10
-		rem2 = y % 10
 		x = x // 10
-		y = y // 10
 		lst1.append(rem1)
+	while y > 0:
+		rem2 = y % 10
+		y = y // 10
 		lst2.append(rem2)
-	if len(lst1) != len(lst2):
-		return False
-	elif zero in lst1 or zero in lst2:
-		return False
-	else:
-		pass	
+
+	return (lst1, lst2)
+
+print(isrotation(3412, 1234))
