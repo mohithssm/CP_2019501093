@@ -21,12 +21,10 @@ def binary(input_array, low, high, value):
     
     while low <= high:
         mid = (low + high)//2
-
         if input_array[mid] < value:
             low = mid + 1
         elif input_array[mid] > value:
             high = mid - 1
         else:
             return mid
-            
     return -1
