@@ -2,9 +2,11 @@
 Input a list.
 Output a sorted list."""
 def quicksort(array):
-
-	arr = sort(array, 0, len(array) - 1)
-	return arr
+	lst = []
+	sort(array, 0, len(array) - 1)
+	for i in range(len(array)):
+		lst.append(array[i])
+	return lst
 
 def sort(array, low, high):
 	if low < high:
