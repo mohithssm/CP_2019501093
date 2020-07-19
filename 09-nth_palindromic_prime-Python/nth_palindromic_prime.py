@@ -11,6 +11,7 @@ def fun_nth_palindromic_prime(n):
 	while n >= 0:
 		print(count)
 		if  is_palindrome(count) and fun_is_prime(count):
+			print("inside", n)
 			n = n - 1
 		count = count + 1
 	return count - 1
