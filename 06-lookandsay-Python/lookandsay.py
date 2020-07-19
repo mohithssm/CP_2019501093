@@ -20,6 +20,7 @@ def lookandsay(a):
 
 		else:
 			count = 0
+			x = i
 
 	return (lst)
 print(lookandsay([-1,2,7]))	 
