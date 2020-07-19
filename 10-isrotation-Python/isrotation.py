@@ -17,7 +17,7 @@ def isrotation(x, y):
 		y = y // 10
 		lst.appen(rem1)
 		lst.appen(rem2)
-	if len(x) != len(y):
+	if len(lst1) != len(lst2):
 		return False
 	elif zero in lst1 or zero in lst2:
 		return False
