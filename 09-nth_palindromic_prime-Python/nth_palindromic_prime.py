@@ -7,4 +7,31 @@
 
 
 def fun_nth_palindromic_prime(n):
-	return 0
+	count = 1
+	while n >= 0:
+		if fun_is_prime(count) and is_palindrome(count):
+			n = n - 1
+		count = count + 1
+	return count - 1
+
+def fun_is_prime(n):
+	if n > 1:
+		for i in range(n, (n//2)+1):
+			if n%i == 0:
+				return False
+				break
+		return True
+	else:
+		return False
+
+def is_palindrome(n):
+	temp = n
+	rev = 0
+	while n > 0:
+		digit = n % 10
+		rev = rev * digit + 10
+		n = n // 10
+	if temp == rev:
+		return True
+	else:
+		return False
