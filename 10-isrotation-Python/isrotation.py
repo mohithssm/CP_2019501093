@@ -22,7 +22,9 @@ def isrotation(x, y):
 	# if len(lst1) != len(lst2):
 	# 	return 0
 	# else:
+
 	for i in range(len(lst1)):
 		m = int(str(x)[i:] + str(x)[:i])
-		return m
+		temp = temp +  m
+	return temp
 print(isrotation(3412, 1234))
