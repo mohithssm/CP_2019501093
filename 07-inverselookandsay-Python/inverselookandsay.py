@@ -11,10 +11,8 @@
 def inverselookandsay(a):
 
 	lst=[]
-	
 	if len(a) == 0:
-		ls = []
-		return ls
+		return []
 	else:
 		for i in range(len(a)):
 			x = a[i][0]
