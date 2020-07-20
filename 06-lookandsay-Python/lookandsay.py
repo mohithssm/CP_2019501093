@@ -15,9 +15,10 @@ def lookandsay(a):
 		return a
 	else:
 		for i in range(len(a)-1):
+			print(i)
 			if a[i] == a[i+1]:
 				count = count + 1
-				print(a[i], count)
+				# print(a[i], count)
 			else:
 
 				lst.append((count, a[i]))
