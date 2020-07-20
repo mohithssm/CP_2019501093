@@ -20,10 +20,12 @@ def lookandsay(a):
 		else:
 			t1 = (count, a[i-1])
 			lst.append(t1)
-			print("count is False", count)
 			x = i 
-
+			i = i - 1
 			count = 0
+			print("count is False", count)
+			print("x : ", x)
+			print("i : ", i)
 
 	return (lst)
 print(lookandsay([3,3,8,3,3,3,3]))	 
