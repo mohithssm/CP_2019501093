@@ -7,9 +7,8 @@
 
 
 def fun_rotatestrings(s, n):
-
+	s_length = len(s)
 	if n > 0:
-		s_length = len(s)
 		n =  n % s_length
 		return s[n:] + s[:n]
 	else:
