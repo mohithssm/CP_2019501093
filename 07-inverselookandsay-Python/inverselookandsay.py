@@ -10,7 +10,6 @@
 
 def inverselookandsay(a):
 	lst = []
-	for i in range(len(a)):
-		print([lst[1] for lst in a])
+	print([lst[1] for lst in a])
 
 print(inverselookandsay([(2,3),(1,8),(3,-10)]))
