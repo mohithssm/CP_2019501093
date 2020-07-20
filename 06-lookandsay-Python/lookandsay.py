@@ -10,18 +10,19 @@
 def lookandsay(a):
 	count = 0
 	lst = []
+	x = 0
 
 	for i in range(len(a)):
-		x = 0
 		if a[i] == a[x]:
 			count = count + 1
 
 		else:
-			t1 = (count, a[i])
+			t1 = (count, a[i-1])
 			lst.append(t1)
 
 			count = 0
 			x = i
+			i = i-1
 
 	return (lst)
 print(lookandsay([3,3,8,3,3,3,3]))	 
