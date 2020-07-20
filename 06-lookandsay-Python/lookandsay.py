@@ -22,7 +22,7 @@ def lookandsay(a):
 			lst.append(t1)
 			count = 0
 			x = loop_var
-			loop_var = loop_var - 1
+			loop_var = i - 1
 
 	return (lst)
 print(lookandsay([3,3,8,3,3,3,3]))	 
