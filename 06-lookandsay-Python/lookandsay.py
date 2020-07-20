@@ -13,6 +13,7 @@ def lookandsay(a):
 	x = 0
 
 	for i in range(len(a)):
+		print(i)
 		if a[i] == a[x]:
 			count = count + 1
 			print("count is", count)
