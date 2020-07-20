@@ -11,7 +11,7 @@
 def inverselookandsay(a):
 
 	lst=[]
-	print(len(a))
+	
 	if len(a) == 1:
 		ls = []
 		return ls
