@@ -13,6 +13,6 @@ def fun_kth_occurrences(s, n):
 			dict[elem] = 1
 		
 	result = sorted(dict.items(), key = lambda l : l[1], reverse = True)
-	return result[n-1]
+	return result[n-1][0]
 
 
