@@ -12,4 +12,4 @@ def multipolynomials(p1, p2):
 	mul = np.polymul(p1, p2)
 	return mul
 
-print(multipolynomials([1, 1, 1], [1, 0]))
+print(multipolynomials([2,0,3], [4,5]))
