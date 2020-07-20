@@ -18,6 +18,7 @@ def lookandsay(a):
 			if a[i] == a[i+1]:	
 				count = count + 1
 			elif(i == len(a) - 2):
+				print("in elif")
 				lst.append((count, a[i]))
 			else:
 				lst.append((count, a[i]))
