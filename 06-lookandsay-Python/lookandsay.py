@@ -23,7 +23,7 @@ def lookandsay(a):
 			print("count :", count)
 			print("--------------")
 
-		if (a[i] != a[x]):
+		else:
 
 			t1 = (count, a[x])
 			lst.append(t1)
