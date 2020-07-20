@@ -19,7 +19,7 @@ def lookandsay(a):
 				print("True loop", i)
 				count = count + 1
 				if i == (len(a) - 2):
-					print("true")
+					lst.append((count, a[i]))
 			else:
 				print("False loop", i)
 				lst.append((count, a[i]))
