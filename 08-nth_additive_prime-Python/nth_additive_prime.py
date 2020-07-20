@@ -62,7 +62,7 @@ def isadditive(n):
 
 def fun_nth_additive_prime(n):
 	var = 1
-	while n > 0:
+	while n >= 0:
 		if isprime(var) and isadditive(var):
 			n -= 1
 		var += 1
