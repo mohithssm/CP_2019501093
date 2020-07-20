@@ -13,7 +13,7 @@ def inverselookandsay(a):
 	lst=[]
 	print(len(a))
 	if len(a) == 1:
-		ls = [0] * 10
+		ls = []
 		return ls
 	else:
 		for i in range(len(a)):
