@@ -67,5 +67,5 @@ def fun_nth_additive_prime(n):
 			n -= 1
 		var += 1
 	return var - 1
-	
-print(fun_nth_additive_prime(7))
+
+print(fun_nth_additive_prime(5))
