@@ -7,9 +7,8 @@
 import numpy as np
 
 def multipolynomials(p1, p2):
-	x = np.poly1d(p1)
-	y = np.poly1d(p2)
-	# print(x)
-	# print(y)
+	p1 = np.poly1d(p1)
+	p2 = np.poly1d(p2)
+	mul = np.polymul(p1, p2)
 
 print(multipolynomials([1, 1, 1], [1, 0]))
