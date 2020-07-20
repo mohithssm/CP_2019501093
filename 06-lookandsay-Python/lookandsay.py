@@ -17,6 +17,7 @@ def lookandsay(a):
 		if a[i] == a[x]:
 			print("x : ", x)
 			print("i : ", i)
+			print("count :", count)
 			count = count + 1
 			# print("count is true--count:", count)
 		else:
