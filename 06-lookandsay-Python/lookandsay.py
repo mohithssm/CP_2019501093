@@ -16,6 +16,7 @@ def lookandsay(a):
 	else:
 		for i in range(len(a)-1):
 			if a[i] == a[i+1]:	
+				print(i)
 				count = count + 1
 			elif(i == len(a) - 2):
 				print("in elif")
