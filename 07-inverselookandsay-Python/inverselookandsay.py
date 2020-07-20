@@ -22,4 +22,4 @@ def inverselookandsay(a):
 				lst.append(a[i][1])
 		return lst
 
-inverselookandsay([(),])
+print(inverselookandsay([(),]))
