@@ -13,10 +13,9 @@ def lookandsay(a):
 	x = 0
 
 	for i in range(len(a)):
-		# print("loop", i)
 		if a[i] == a[x]:
 			count = count + 1
-
+			print(a[i], count)
 		else:
 
 			t1 = (count, a[x])
