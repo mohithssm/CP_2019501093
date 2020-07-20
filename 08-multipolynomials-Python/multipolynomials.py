@@ -11,4 +11,4 @@ def multipolynomials(p1, p2):
 	y = np.poly1d(p2)
 	print(x)
 
-print(multipolynomials([1], [1]))
+print(multipolynomials([1, 1, 1], [1, 0]))
