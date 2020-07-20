@@ -19,7 +19,7 @@ def lookandsay(a):
 				count = count + 1
 
 			else:
-				# t1 = (count, a[x])
+
 				lst.append((count, a[i]))
 				count = 1
 		return (lst)
