@@ -39,3 +39,5 @@ def addictive_number(n):
 		return True
 	else:
 		return False
+
+print(fun_nth_additive_prime(7))
