@@ -24,11 +24,12 @@ def lookandsay(a):
 			print("--------------")
 
 		else:
-			x = i
-			print("x : ", x)
+
 			t1 = (count, a[i-1])
 			lst.append(t1)
 			count = 0
+			x = i
+			print("x : ", x)
 
 	return (lst)
 print(lookandsay([3,3,8,3,3,3,3]))	 
