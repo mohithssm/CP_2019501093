@@ -21,7 +21,7 @@ def lookandsay(a):
 		else:
 			t1 = (count, a[i-1])
 			lst.append(t1)
-			print(x)
+			# print(x)
 			# print("count is", count)
 			count = 0
 			x = i
