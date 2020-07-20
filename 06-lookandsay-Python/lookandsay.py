@@ -19,7 +19,7 @@ def lookandsay(a):
 			
 		else:
 			x = i
-			print("x value", x)
+			# print("x value", x)
 			t1 = (count, a[i-1])
 			lst.append(t1)
 			# print(x)
