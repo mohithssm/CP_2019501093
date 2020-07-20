@@ -18,7 +18,7 @@ def lookandsay(a):
 			count = count + 1
 			print("count is true--count:", count)
 		else:
-			t1 = (count, a[i-1])
+			t1 = (count, a[i])
 			lst.append(t1)
 			print("count is False", count)
 			x = i
