@@ -24,4 +24,4 @@ def lookandsay(a):
 			x = i
 
 	return (lst)
-print(lookandsay([-1,2,7]))	 
+print(lookandsay([3,3,8,3,3,3,3]))	 
