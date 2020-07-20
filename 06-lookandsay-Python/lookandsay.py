@@ -23,4 +23,3 @@ def lookandsay(a):
 				lst.append((count, a[i]))
 				count = 1
 		return (lst)
-print(lookandsay([3,3,8,3,3,3,3]))	 
