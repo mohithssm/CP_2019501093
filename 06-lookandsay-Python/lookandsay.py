@@ -22,7 +22,7 @@ def lookandsay(a):
 		else:
 			t1 = (count, a[i-1])
 			lst.append(t1)
-			x = i 
+			x = x - 1
 			# i = i - 1
 			count = 0
 			print("count is False", count)
