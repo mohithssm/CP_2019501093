@@ -17,13 +17,10 @@ def lookandsay(a):
 		for i in range(len(a)-1):
 			print(i)
 			if a[i] == a[i+1]:	
-				print("True loop", i)
 				count = count + 1
 				if i == (len(a) - 2):
 					lst.append((count, a[i]))
-			else:
-				print("False loop", i)
-			 
+			else:			 
 				lst.append((count, a[i]))
 				count = 1
 		return (lst)
