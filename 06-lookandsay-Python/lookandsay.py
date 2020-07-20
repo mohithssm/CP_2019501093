@@ -15,13 +15,12 @@ def lookandsay(a):
 		x = 0
 		if a[i] == a[x]:
 			count = count + 1
-			t1 = (count, a[i])
 
 		else:
 			t1 = (count, a[i])
-			lst.append(t1)
 			count = 0
 			x = i
+			lst.append(t1)
 
 	return (lst)
 print(lookandsay([-1,2,7]))	 
