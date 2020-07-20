@@ -26,16 +26,16 @@ def fun_is_prime(n):
 		return False
 
 def addictive_number(n):
-	lst = []
+	# lst = []
 	tot = 0
 	while n > 0:
 		digit = n % 10
 		n = n // 10
 		tot = tot + digit
-		lst.append(digit)
-	total = sum(lst)
-	print(total, tot)
-	if fun_is_prime(total):
+		# lst.append(digit)
+	# total = sum(lst)
+	
+	if fun_is_prime(tot):
 		return True
 	else:
 		return False
