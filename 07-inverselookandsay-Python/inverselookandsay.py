@@ -12,8 +12,7 @@ def inverselookandsay(a):
 	lst=[]
 	for i in range(len(a)):
 		x = a[i][0]
-		print(x)
 		for j in range(x):
-			lst.append(a[j][1])
+			lst.append(a[i][1])
 	return lst
 print(inverselookandsay([(2,3),(1,8),(3,-10)]))
