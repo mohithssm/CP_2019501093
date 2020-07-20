@@ -9,7 +9,7 @@ import numpy as np
 def multipolynomials(p1, p2):
 	p1 = np.poly1d(p1)
 	p2 = np.poly1d(p2)
-	mul = np.polymul(p1, p2)
+	mul = np.polymul(p2, p1)
 	return mul
 
 print(multipolynomials([2,0,3], [4,5]))
