@@ -26,7 +26,7 @@ def lookandsay(a):
 			t1 = (count, a[i-1])
 			lst.append(t1)
 			x = i
-			i = i - 2
+			i = i - 1
 			count = 0
 
 	return (lst)
