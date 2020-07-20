@@ -11,9 +11,7 @@ def fun_kth_occurrences(s, n):
 			dict[elem] = dict[elem] + 1
 		else:
 			dict[elem] = 1
-		print(dict.items())
 	result = sorted(dict.items(), key = lambda l : l[1], reverse = True)
-	# print(result)
 	return result[n-1][0]
 
 print(fun_kth_occurrences("hello hyderabad a", 1))
