@@ -26,6 +26,7 @@ def lookandsay(a):
 			t1 = (count, a[i-1])
 			lst.append(t1)
 			x = i
+			print("x:", x)
 			count = 0
 
 	return (lst)
