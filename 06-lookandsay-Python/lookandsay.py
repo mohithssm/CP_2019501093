@@ -18,11 +18,11 @@ def lookandsay(a):
 			print("x : ", x)
 			print("i : ", i)
 			count = count + 1
-			print("count is true--count:", count)
+			# print("count is true--count:", count)
 		else:
 			t1 = (count, a[i-1])
 			lst.append(t1)
-			x = i
+			x = i + 1
 			count = 0
 
 	return (lst)
