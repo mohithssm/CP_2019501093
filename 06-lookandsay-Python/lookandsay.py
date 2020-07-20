@@ -18,6 +18,7 @@ def lookandsay(a):
 			print("x : ", x)
 			print("i : ", i)
 			print("count :", count)
+			print("--------------")
 			count = count + 1
 			# print("count is true--count:", count)
 		else:
