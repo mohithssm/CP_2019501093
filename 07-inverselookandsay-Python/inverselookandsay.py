@@ -21,5 +21,3 @@ def inverselookandsay(a):
 			for j in range(x):
 				lst.append(a[i][1])
 		return lst
-
-print(inverselookandsay([(),]))
