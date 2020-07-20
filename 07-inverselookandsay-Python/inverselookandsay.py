@@ -12,7 +12,7 @@ def inverselookandsay(a):
 
 	lst=[]
 	
-	if len(a) == 1:
+	if len(a) == 0:
 		ls = []
 		return ls
 	else:
