@@ -9,7 +9,7 @@
 
 def lookandsay(a):
 
-	count = 1
+	count = 0
 	lst = []
 	if len(a) == 0:
 		return a
