@@ -13,16 +13,16 @@ def lookandsay(a):
 	x = 0
 
 	for i in range(len(a)):
-		if a[i] == a[x]:
+		loop_var = i
+		if a[loop_var] == a[x]:
 			count = count + 1
-			# print(a[i], count)
+		
 		else:
-
 			t1 = (count, a[x])
 			lst.append(t1)
 			count = 0
-			x = i
-			i = i - 1
+			x = loop_var
+			loop_var = i 
 
 	return (lst)
 print(lookandsay([3,3,8,3,3,3,3]))	 
