@@ -25,7 +25,6 @@ def lookandsay(a):
 			# print(x)
 			# print("count is", count)
 			count = 0
-			i = i-1
 
 	return (lst)
 print(lookandsay([3,3,8,3,3,3,3]))	 
