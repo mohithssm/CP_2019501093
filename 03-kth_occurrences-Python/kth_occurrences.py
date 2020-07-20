@@ -8,9 +8,9 @@ def fun_kth_occurrences(s, n):
 	dict = {}
 	for elem in s:
 		if elem in dict:
-			dict[i] = dict[i] + 1
+			dict[elem] = dict[elem] + 1
 		else:
-			dict[i] = 1
+			dict[elem] = 1
 		
 	result = sorted(dict.items(), key = lambda l : l[1], reverse = True)
 	return result[n-1]
