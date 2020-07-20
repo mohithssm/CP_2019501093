@@ -18,7 +18,7 @@ def lookandsay(a):
 			if a[i] == a[i+1]:	
 				print("True loop", i)
 				count = count + 1
-				if i == (len(a) - 2):
+				if i == (len(a) - 2) or i == (len(a) - 1):
 					lst.append((count, a[i]))
 			else:
 				print("False loop", i)
