@@ -18,9 +18,10 @@ def lookandsay(a):
 
 		else:
 			t1 = (count, a[i])
+			lst.append(t1)
+
 			count = 0
 			x = i
-			lst.append(t1)
 
 	return (lst)
 print(lookandsay([-1,2,7]))	 
