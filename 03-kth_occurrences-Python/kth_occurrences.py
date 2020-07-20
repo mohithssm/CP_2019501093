@@ -5,6 +5,14 @@
 
 
 def fun_kth_occurrences(s, n):
-	return 'a'
+	dict = {}
+	for elem in s:
+		if elem in d:
+			dict[i] = dict[i] + 1
+		else:
+			dict[i] = 1
+		
+	result = sorted(dict.items(), key = lambda l : l[1], reverse = True)
+	return result[n-1]
 
 
