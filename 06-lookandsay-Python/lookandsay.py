@@ -9,7 +9,7 @@
 
 def lookandsay(a):
 
-	count = 0
+	count = 1
 	lst = []
 	if len(a) == 0:
 		return a
@@ -21,7 +21,7 @@ def lookandsay(a):
 			else:
 
 				lst.append((count, a[i]))
-				count = 0
+				count = 1
 		return (lst)
 
 print(lookandsay([3,3,8,3,3,3,3]))
