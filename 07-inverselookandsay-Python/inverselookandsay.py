@@ -11,7 +11,7 @@
 def inverselookandsay(a):
 
 	lst=[]
-	if len(a) == 0:
+	if len(a[0]) == 0:
 		ls = [0] * 10
 		return ls
 	else:
