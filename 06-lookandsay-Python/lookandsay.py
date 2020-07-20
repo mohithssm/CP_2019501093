@@ -17,14 +17,15 @@ def lookandsay(a):
 		if a[i] == a[x]:
 			print("x : ", x)
 			print("i : ", i)
+
+			count = count + 1
 			print("count :", count)
 			print("--------------")
-			count = count + 1
-			# print("count is true--count:", count)
+
 		else:
 			t1 = (count, a[i-1])
 			lst.append(t1)
-			x = i + 1
+			x = i
 			count = 0
 
 	return (lst)
