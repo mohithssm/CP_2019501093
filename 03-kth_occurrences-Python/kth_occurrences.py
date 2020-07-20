@@ -7,7 +7,7 @@
 def fun_kth_occurrences(s, n):
 	dict = {}
 	for elem in s:
-		if elem in d:
+		if elem in dict:
 			dict[i] = dict[i] + 1
 		else:
 			dict[i] = 1
