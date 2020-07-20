@@ -16,12 +16,13 @@ def lookandsay(a):
 	else:
 		for i in range(len(a)-1):
 			if a[i] == a[i+1]:	
-				print(i)
+				print("True loop", i)
 				count = count + 1
 			elif(i == len(a) - 2):
 				print("in elif")
 				lst.append((count, a[i]))
 			else:
+				print("False loop", i)
 				lst.append((count, a[i]))
 				count = 1
 		return (lst)
