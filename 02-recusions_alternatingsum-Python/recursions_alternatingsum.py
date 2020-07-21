@@ -6,8 +6,8 @@
 
 def fun_recursions_alternatingsum(l): 
 	print(l[0])
-	print(l[2::2])
-	print(l[1::2])
+	print(l[::2])
+	print(l[::2])
 	if len(l) == 0:
 		return 0
 	else:
