@@ -9,5 +9,5 @@ def fun_hasnoprimes(l):
 			lst.append(l[i][j])
 	return lst
 
-fun_hasnoprimes([[12,4,6],[8,12,14],[6,18]])
+print(fun_hasnoprimes([[12,4,6],[8,12,14],[6,18]]))
 
