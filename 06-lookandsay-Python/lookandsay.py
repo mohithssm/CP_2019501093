@@ -12,7 +12,7 @@ def lookandsay(a):
 	count = 1
 	lst = []
 	if len(a) == 0:
-		return a
+		return []
 	else:
 		for i in range(len(a)-1):
 			print(i)
