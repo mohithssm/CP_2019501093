@@ -6,10 +6,12 @@ def fun_hasnoprimes(l):
 	lst = []
 	for i in range(len(l)):
 		for j in range(len(l[i])):
-			if fun_is_prime(l[i][j]) == False:
-				return True
-			else:
-				return False
+			lst.append(l[i][j])
+	for elem in lst:
+		if fun_is_prime(elem) == False:
+			return True
+		else:
+			return False		
 
 
 
