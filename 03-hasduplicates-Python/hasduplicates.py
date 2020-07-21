@@ -9,11 +9,6 @@ def hasduplicates(L):
 		for j in range(len(L[i])):
 			lst.append(L[i][j])
 	print(lst)
-	for i in range(len(lst)):
-		print(i)
-		if lst[i] in lst:
-			return True
-		else:
-			return False
+	
 
 print(hasduplicates([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
