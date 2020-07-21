@@ -17,7 +17,7 @@ def destructiveshortenlongruns(L, k):
 	for i in range(len(L) - 2):
 		if L[i] == L[i+1]:
 			count = count + 1
-		elif count >= k:
+		if count >= k:
 			L.pop(i)
 			i = i - 1
 	return L
