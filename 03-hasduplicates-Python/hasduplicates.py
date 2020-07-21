@@ -9,8 +9,8 @@ def hasduplicates(L):
 		for j in range(len(L[i])):
 			lst.append(L[i][j])
 
-	for elem in lst:
-		if elem in lst:
+	for i in range(len(lst)):
+		if lst[i] == lst[i+1]:
 			return True
 		else:
 			return False
