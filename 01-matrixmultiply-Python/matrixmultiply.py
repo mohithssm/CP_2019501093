@@ -3,8 +3,12 @@
 # is the result of multiplying the two matrices. Return None if the 
 # two matrices cannot be multiplied for any reason.
 
+import numpy as np
+
 def fun_matrixmultiply(m1, m2):
-    result = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+    # result = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+    result = np.zeros((3,4))
+
     print(result)
     if len(m1[0]) == len(m2):      
         for i in range(len(m1)):
