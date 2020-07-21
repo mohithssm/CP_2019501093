@@ -6,8 +6,21 @@ def fun_hasnoprimes(l):
 	lst = []
 	for i in range(len(l)):
 		for j in range(len(l[i])):
-			lst.append(l[i][j])
-	return lst
+			if fun_is_prime(l[i][j]) == False:
+				return True
+			else:
+				return False
+
+
+
+def fun_is_prime(n):
+	if n > 1:
+		for i in range(2, n//2):
+			if n%i == 0:
+				return False
+		return True
+	else:
+		return False
+
 
 print(fun_hasnoprimes([[12,4,6],[8,12,14],[6,18]]))
-
