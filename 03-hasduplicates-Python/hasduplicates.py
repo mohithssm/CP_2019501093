@@ -11,7 +11,7 @@ def hasduplicates(L):
 	print(lst)
 	for elem in lst:
 		if elem in lst:
-			print(elem)
+			return True
 		else:
 			return False
 
