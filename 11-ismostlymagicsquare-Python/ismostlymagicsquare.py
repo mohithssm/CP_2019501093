@@ -39,6 +39,4 @@ def ismostlymagicsquare(a):
 			sum_of_columns = sum_of_columns + a[j][i]
 		if r != sum_of_columns:
 			return False
-
-
 	return True	 
