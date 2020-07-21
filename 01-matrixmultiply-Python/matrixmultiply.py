@@ -7,7 +7,7 @@ import numpy as np
 
 def fun_matrixmultiply(m1, m2):
     # result = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-    result = [[0 for i in range(4)] for j in range(3)]
+    result = [[0 for i in range(len(m2[0]))] for j in range(len(m1))]
 
     print(result)
     if len(m1[0]) == len(m2):      
