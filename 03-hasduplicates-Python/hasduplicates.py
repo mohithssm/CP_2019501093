@@ -12,5 +12,5 @@ def hasduplicates(L):
 				return False
 			else:
 				return True
-	
+	print(lst)
 print(hasduplicates([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
