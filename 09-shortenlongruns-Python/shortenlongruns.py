@@ -21,5 +21,5 @@ def shortenlongruns(L, k):
 			arr.append(L[i])
 
 	if L[len(L) - 1] != L[len(L) - 2]:
-		arr.append(L[len])
+		arr.append(L([len]-1))
 	return arr
