@@ -10,8 +10,9 @@ def hasduplicates(L):
 			lst.append(L[i][j])
 	print(lst)
 	for i in range(len(lst)):
+		print(i)
 		if lst[i] in lst:
-			print(lst[i])
+			# print(lst[i])
 			return True
 		else:
 			return False
