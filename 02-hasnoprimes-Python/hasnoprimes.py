@@ -23,6 +23,3 @@ def fun_is_prime(n):
 		return True
 	else:
 		return False
-
-
-print(fun_hasnoprimes([[2]]))
