@@ -14,3 +14,5 @@ def hasduplicates(L):
 			return True
 		else:
 			return False
+
+print(hasduplicates([[2, 7, 9], [9, 5, 1], [4, 3, 8]]))
