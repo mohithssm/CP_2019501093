@@ -21,7 +21,7 @@ def ismostlymagicsquare(a):
 	
 	c = 0
 	for j in range(0, n):
-		c = c[j][n-j-1]
+		c = c + a[j][n-j-1]
 	
 	if r != c:
 		return  False
