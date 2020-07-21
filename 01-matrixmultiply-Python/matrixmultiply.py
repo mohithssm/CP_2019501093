@@ -5,6 +5,9 @@
 import numpy as np
 
 def fun_matrixmultiply(m1, m2):
+    print(m1)
+    print(m2)
+
     result = np.dot(m1, m2)
     return result
 print(fun_matrixmultiply([[1,3],[2,4],[2,5]], [[1,3,2,2], [2,4,5,1]]))
