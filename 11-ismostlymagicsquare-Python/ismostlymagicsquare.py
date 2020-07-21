@@ -25,13 +25,7 @@ def ismostlymagicsquare(a):
 	
 	if r != c:
 		return  False
-	
-	for i in range(0, n):
-		sum_of_columns = 0
-		for j in range(0, n):
-			sum_of_columns = sum_of_columns + a[j][i]
-		if r != sum_of_columns:
-			return False
+
 
 	for i in range(0, n):
 		sum_of_rows = 0
@@ -39,5 +33,13 @@ def ismostlymagicsquare(a):
 			sum_of_rows = sum_of_rows + a[i][j]
 		if sum_of_rows != 1:
 			return False
+
+	for i in range(0, n):
+		sum_of_columns = 0
+		for j in range(0, n):
+			sum_of_columns = sum_of_columns + a[j][i]
+		if r != sum_of_columns:
+			return False
+
 
 	return True	 
