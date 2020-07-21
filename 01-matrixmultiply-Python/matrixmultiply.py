@@ -5,8 +5,8 @@
 import numpy as np
 
 def fun_matrixmultiply(m1, m2):
-    print(len(m1), len(m2[0]))
-    if len(m1) == len(m2[0]):      
+    print(len(m1[0]), len(m2))
+    if len(m1[0]) == len(m2):      
         result = (np.dot(m1, m2))
         print(result)
         return result
