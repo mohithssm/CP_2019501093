@@ -12,4 +12,4 @@ def fun_recursions_alternatingsum(l):
 		pass
 		return l[0] - fun_recursions_alternatingsum(l[1:])
 
-print(fun_recursions_alternatingsum([12,18,16,34,56]))
+print(fun_recursions_alternatingsum([99,56,23,98,45]))
