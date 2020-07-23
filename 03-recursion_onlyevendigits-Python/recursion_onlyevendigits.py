@@ -21,13 +21,12 @@ def fun_checkeven(l):
 	lst = []
 
 	for i in range(len(l)):
-		st = 0
 		rev = 0
 		while l[i] > 0:
 			r = l[i] % 10
 			if r%2 == 0:
-				st = st + r
-				rev = (rev*10) + st
+				rev = (rev*10) + r
+				print(rev)
 			l[i] = l[i] // 10
 		lst.append(rev)
 
