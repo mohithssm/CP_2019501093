@@ -33,6 +33,7 @@ def fun_checkeven(l):
 		rev2 = 0
 		# print(lst[j])
 		while l[j] > 0:
+			print(l[j])
 			r = l[j] % 10
 			rev2 = (rev2*10) + r
 			l[j] = l[j] // 10
