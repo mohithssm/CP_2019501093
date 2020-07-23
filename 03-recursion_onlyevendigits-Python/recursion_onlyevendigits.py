@@ -19,15 +19,15 @@ def fun_recursion_onlyevendigits(l):
 def fun_checkeven(l):
 	lst_len = len(l)
 	lst = []
-
+	st = ""
 	lst1 = []
 	for i in range(len(l)):
 		while l[i] > 0:
 			r = l[i] % 10
 			l[i] = l[i] // 10
 			if r%2 == 0:
-				lst.append(r)
-		
+				st = st + str(r)
+		lst1.append(st)
 	return lst
 
 print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
