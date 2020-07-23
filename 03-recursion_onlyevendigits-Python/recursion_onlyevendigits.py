@@ -31,7 +31,7 @@ def fun_checkeven(l):
 	
 	for j in range (len(lst)):
 		rev2 = 0
-		print(len(lst))
+		print(lst[j])
 		while l[j] > 0:
 			r = l[j] % 10
 			rev2 = (rev2*10) + r
