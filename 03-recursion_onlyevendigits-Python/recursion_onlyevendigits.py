@@ -19,9 +19,9 @@ def fun_recursion_onlyevendigits(l):
 def fun_checkeven(l):
 	lst_len = len(l)
 	lst = []
-	st = ""
 	lst1 = []
 	for i in range(len(l)):
+		st = ""
 		if l[i] != 0:
 			while l[i] > 0:
 				r = l[i] % 10
