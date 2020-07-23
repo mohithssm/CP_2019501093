@@ -28,6 +28,6 @@ def fun_checkeven(l):
 			if r%2 == 0:
 				st = st + str(r)
 		lst1.append(st)
-	return lst
+	return lst1
 
 print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
