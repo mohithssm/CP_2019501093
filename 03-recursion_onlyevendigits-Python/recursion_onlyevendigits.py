@@ -26,7 +26,7 @@ def fun_checkeven(l):
 			r = l[i] % 10
 			l[i] = l[i] // 10
 			if r%2 == 0:
-				st = st + r
+				st = (st*10) + r
 		lst1.append(st)
 
 	return lst1
