@@ -22,7 +22,6 @@ def fun_checkeven(l):
 	mainLst = []
 	for i in range(len(l)):
 		rev = 0
-		rev2 = 0
 		while l[i] > 0:
 			r = l[i] % 10
 			if r%2 == 0:
@@ -31,10 +30,11 @@ def fun_checkeven(l):
 		lst.append(rev)
 	
 	for j in range (len(lst)):
-		while lst[j] > 0:
-			rem = lst[j] % 10
-			rev2 = (rev2*10) + rem
-			lst[j] = lst[j] // 10
-		mainLst.append(rev2)
+		rev2 = 0
+		while l[j] > 0:
+			r = l[j] % 10
+			rev = (rev*10) + r
+			l[j] = l[j] // 10
+		lst.append(rev)
 	return mainLst
 print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
