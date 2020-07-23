@@ -29,7 +29,7 @@ def fun_checkeven(l):
 				st = (st*10) + r
 				rev = (rev*10) + st
 			l[i] = l[i] // 10
-		lst.append(st)
+		lst.append(rev)
 
 	return lst
 
