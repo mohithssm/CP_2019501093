@@ -9,6 +9,8 @@ def fun_numberofpoolballrows(balls):
 	if balls > 0:
 		a = 1
 		d = 1
-		res = (balls/2)((2*a) + (balls - 1)*d)
+		res = (balls//2) *(2**a + (balls-1) * d)
 		return res
+
+print(fun_numberofpoolballrows(36))
 
