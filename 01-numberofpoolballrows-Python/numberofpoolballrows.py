@@ -10,5 +10,5 @@ def fun_numberofpoolballrows(balls):
 	d = 1
 	x = (balls/2) * (2*a + (balls-1)*d)
 	return int(x)
-print(fun_numberofpoolballrows(5))
+print(fun_numberofpoolballrows(15))
 
