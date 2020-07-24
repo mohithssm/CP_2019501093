@@ -30,6 +30,6 @@ def recursion_binarysearchvalues(L, v, low = None, high = None):
 	if high < low:
 		return []
 	elif L[mid_val] > v:
-		return [(mid_val. L[mid_val])] + recursion_binarysearchvalues(L, v, low, mid_val-1)
+		return [(mid_val, L[mid_val])] + recursion_binarysearchvalues(L, v, low, mid_val-1)
 	else:
-		return [(mid_val. L[mid_val])] + recursion_binarysearchvalues(L, v, mid_val+1, high)
+		return [(mid_va, L[mid_val])] + recursion_binarysearchvalues(L, v, mid_val+1, high)
