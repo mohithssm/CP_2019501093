@@ -18,7 +18,7 @@ def recursion_secondlargest(L):
 		return None
 	else:
 		s = sec_large(L[1:])	
-
+		return s
 def sec_large(L):
 	largest = L[0]
 	largest_2nd = None
