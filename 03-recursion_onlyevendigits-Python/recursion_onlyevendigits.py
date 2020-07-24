@@ -36,4 +36,4 @@ def fun_checkeven(l):
 		mainLst.append(rev2)
 	return mainLst
 
-print(fun_checkeven([335]))
+print(fun_recursion_onlyevendigits([5, 0 , 66, 82, 121]))
