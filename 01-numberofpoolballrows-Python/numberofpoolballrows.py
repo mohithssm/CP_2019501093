@@ -8,7 +8,7 @@
 def fun_numberofpoolballrows(balls):
 	a = 1
 	d = 1
-	x = (balls//2) * (2*a + (balls-1)*d)
+	x = (balls/2) * (2*a + (balls-1)*d)
 	return x
 print(fun_numberofpoolballrows(5))
 
