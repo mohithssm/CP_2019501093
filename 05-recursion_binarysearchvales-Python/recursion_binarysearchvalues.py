@@ -24,7 +24,7 @@ def recursion_binarysearchvalues(L, v, low = None, high = None):
 	mid_val = (low+high) // 2
 	if L[mid_val] == v:
 		return [(mid, L[mid])]
-	elif low < high:
+	if low < high:
 		return []
 	elif L[mid] < v:
 		return [(mid_val. L[mid_val])] + recursion_binarysearchvalues(L, v, mid_val+1, high)
