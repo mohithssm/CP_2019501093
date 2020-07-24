@@ -14,5 +14,20 @@
 # values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 
 def recursion_secondlargest(L):
-	# Your code goes here
-	pass
+	if len(L) < 2:
+		return None
+	else:
+		s = sec_large(L)	
+
+def sec_large(L):
+	largest = L[0]
+	largest_2nd = None
+
+	for elem in L[1:]:
+		if elem > largest:
+			largest_2nd = largest
+			largest = elem
+		elif largest_2nd == None or largest_2nd < elem:
+			largest_2nd = elem
+
+print(sec_large( [12, 45, 2, 41, 31, 10, 8, 6, 4] ))
