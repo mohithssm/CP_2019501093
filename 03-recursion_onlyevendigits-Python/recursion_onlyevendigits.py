@@ -9,12 +9,14 @@
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
 def fun_recursion_onlyevendigits(l):
+	lst = []
 	if l == []:
-		return []
+		return lst
 	else:
 		for i in range(len(l)):
 			res = fun_checkeven(l[i])
-		return res
+			lst.append(res)
+		return 
 def fun_checkeven(ele):
 	lst = []
 	rev = 0
