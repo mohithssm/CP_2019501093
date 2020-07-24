@@ -29,5 +29,5 @@ def sec_large(L):
 			largest = elem
 		elif largest_2nd == None or largest_2nd < elem:
 			largest_2nd = elem
-
+	return largest_2nd
 print(sec_large( [12, 45, 2, 41, 31, 10, 8, 6, 4] ))
