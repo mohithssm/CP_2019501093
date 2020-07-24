@@ -11,7 +11,7 @@ def recursion_powersof3ton(n):
 	if n < 1:
 		return None
 	num = power(n)
-	if m < 3:
+	if n < 3:
 		return [1]
 	else:
 		return recursion_powersof3ton(3**num-1) +[3**num]
