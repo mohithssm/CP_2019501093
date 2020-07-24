@@ -33,5 +33,3 @@ def fun_checkeven(ele):
 			rev2 = (rev2*10) + r
 			lst[j] = lst[j] // 10
 	return rev2
-
-print(fun_recursion_onlyevendigits([5, 0 , 66, 82, 121]))
