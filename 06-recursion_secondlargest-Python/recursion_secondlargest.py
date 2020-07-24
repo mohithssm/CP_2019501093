@@ -17,12 +17,10 @@ def recursion_secondlargest(L):
 	if len(L) < 2:
 		return None
 	else:
-		s = sec_large(L[1:])	
-		return s
+		return recursion_secondlargest(L[1:])
 def sec_large(L):
 	largest = L[0]
 	largest_2nd = None
-
 	for elem in L[1:]:
 		if elem > largest:
 			largest_2nd = largest
@@ -31,4 +29,4 @@ def sec_large(L):
 			largest_2nd = elem
 	return largest_2nd
 
-print(sec_large( [12, 45, 2, 41, 31, 10, 8, 6, 4] ))
+print(recursion_secondlargest( [12, 45, 2, 41, 31, 10, 8, 6, 4] ))
