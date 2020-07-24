@@ -16,7 +16,7 @@ def fun_recursion_onlyevendigits(l):
 		for i in range(len(l)):
 			res = fun_checkeven(l[i])
 			lst.append(res)
-		return lst
+		return lst + fun_recursion_onlyevendigits(l[1:])
 def fun_checkeven(ele):
 	lst = []
 	rev = 0
