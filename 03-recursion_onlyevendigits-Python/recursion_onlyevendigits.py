@@ -8,16 +8,15 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
-def fun_recursion_onlyevendigits(l):
-	if l == []:
-		return []
-	else:
-		res = fun_checkeven(l)
-		return res
-		# return fun_recursion_onlyevendigits(l[0]) + fun_recursion_onlyevendigits(l[1:])
+# def fun_recursion_onlyevendigits(l):
+# 	if l == []:
+# 		return []
+# 	else:
+# 		res = fun_checkeven(l)
+# 		# return res
+# 		return fun_recursion_onlyevendigits(l[0]) + fun_recursion_onlyevendigits(l[1:])
 
 def fun_checkeven(l):
-	lst_len = len(l)
 	lst = []
 	mainLst = []
 	for i in range(len(l)):
@@ -37,4 +36,5 @@ def fun_checkeven(l):
 			lst[j] = lst[j] // 10
 		mainLst.append(rev2)
 	return mainLst
-print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
+
+print(fun_checkeven([43]))
