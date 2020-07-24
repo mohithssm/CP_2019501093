@@ -15,16 +15,15 @@
 # 		for i in range(len(l)):
 # 			res = fun_checkeven(l[i])
 # 		return res
-def fun_checkeven(elem):
+def fun_checkeven(ele):
 	lst = []
-	for ele in elem:
-		rev = 0
-		while ele > 0:
-			r = ele % 10
-			if r%2 == 0:
-				rev = (rev*10) + r
-			ele = ele // 10
-		lst.append(rev)
+	rev = 0
+	while ele > 0:
+		r = ele % 10
+		if r%2 == 0:
+			rev = (rev*10) + r
+		ele = ele // 10
+	lst.append(rev)
 	
 	for j in range (len(lst)):
 		rev2 = 0
@@ -35,4 +34,4 @@ def fun_checkeven(elem):
 	return rev2
 
 # print(fun_recursion_onlyevendigits([5, 0 , 66, 82, 121]))
-print(fun_checkeven)
+print(fun_checkeven(234))
