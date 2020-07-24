@@ -7,6 +7,14 @@
 	
 import math
 
+def recursion_powersof3ton(n):
+	if n < 1:
+		return None
+	num = power(n)
+	if m < 3:
+		return [1]
+	else:
+		return recursion_powersof3ton(3**x - 1) + [3**x]
 def power(n):
 	if n < 3:
 		return 0
