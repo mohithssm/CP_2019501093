@@ -21,14 +21,6 @@ def fun_is_smith_number(n):
     else:
         return False
 
-def fun_sum_of_digits(n):
-    sum = 0
-    while n != 0:
-        rem = n % 10
-        sum = sum + rem
-        n = n // 10
-    return sum
-
 def fun_prime_factors(n):
     j = 2
     facotrs_lst = []
@@ -42,6 +34,14 @@ def fun_prime_factors(n):
         facotrs_lst.append(n)
     return facotrs_lst
 
+def fun_sum_of_digits(n):
+    sum = 0
+    while n != 0:
+        rem = n % 10
+        sum = sum + rem
+        n = n // 10
+    return sum
+
 def fun_nth_smithnumber(n):
     count = -1
     temp = 4
@@ -51,6 +51,3 @@ def fun_nth_smithnumber(n):
             if count == n:
                 return temp
         temp = temp + 1
-
-
-print(fun_nth_smithnumber(10))
