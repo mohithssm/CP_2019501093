@@ -13,24 +13,24 @@ import math
 def fun_nth_lefttruncatableprime(n):
     count = 1
     while n>= 0:
-        if not is_left_truncatable_prime(count):
+        if is_left_truncatable_prime(count):
             n = n - 1
         count = count + 1
     return count - 1
 
 
 def is_left_truncatable_prime(n):
-    if fun_isprimeNum(n):
-        return True
+    if not fun_isprimeNum(n):
+        return False
     num = str(n)
 
     for i in range(len(num)):
         if "0" in num[i:]:
-            return True
+            return False
         tr = int(num[i:])
-        if fun_isprimeNum(tr):
-            return True
-    return False
+        if not fun_isprimeNum(tr):
+            return False
+    return True
 
 
 def fun_isprimeNum(n):
@@ -44,4 +44,4 @@ def fun_isprimeNum(n):
 		return False
 
 
-print(fun_nth_lefttruncatableprime(5))
+print(fun_nth_lefttruncatableprime(4))
