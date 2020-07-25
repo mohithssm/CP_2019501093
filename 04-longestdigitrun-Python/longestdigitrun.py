@@ -18,7 +18,9 @@ def longestdigitrun(n):
 
 		else:
 			size = 1
-			print(i+1)
+			i = i + 1
+			if i+1 == len(digit_lst):
+				break
 
 		if digit_lst[i+1] not in dict_items.keys():
 			dict_items[digit_lst[i+1]] = size
