@@ -9,12 +9,12 @@
 
 def fun_is_smith_number(n):
     sumOfPrimeFactors = 0
-    prime_factors = primeFactors(n)
+    prime_factors = fun_prime_factors(n)
     len_prime_factors = len(prime_factors)
     if len_prime_factors and prime_factors[len_prime_factors - 1] == n:
         prime_factors.pop()
     for elem in prime_factors:
-        sumOfPrimeFactors = sumOfPrimeFactors + fun_sum_of_digits(temp)
+        sumOfPrimeFactors = sumOfPrimeFactors + fun_sum_of_digits(elem)
     
     if sumOfPrimeFactors == fun_sum_of_digits(n):
         return True
@@ -24,7 +24,7 @@ def fun_is_smith_number(n):
 def fun_sum_of_digits(n):
     sum = 0
     while n != 0:
-        rem = num % 10
+        rem = n % 10
         sum = sum + rem
         n = n // 10
     return sum
@@ -53,3 +53,4 @@ def fun_nth_smithnumber(n):
         temp = temp + 1
 
 
+print(fun_nth_smithnumber(12))
