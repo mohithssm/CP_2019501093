@@ -11,9 +11,26 @@
 import math
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    count = -1
+    while n>= 0:
+        if ishappynumber(count) and isprimeNum(count):
+            n = n - 1
+        count = count + 1
+    return count
 
 
+def is_left_truncatable_prime(n):
+    if not fun_isprimeNum(n):
+        return False
+    num = str(n)
+
+    for i in range(len(num)):
+        if "0" in num[i:]:
+            return False
+        tr = int(num[i:])
+        if not fun_isprimeNum(tr):
+            return False
+    return True
 def fun_isprimeNum(n):
 	if n > 1:
 		for i in range(2, n//2):
