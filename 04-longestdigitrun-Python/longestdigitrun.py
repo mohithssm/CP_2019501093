@@ -22,4 +22,4 @@ def n_arr(n):
 
 
 
-print(longestdigitrun(117773732))
+print(longestdigitrun(112233455567))
