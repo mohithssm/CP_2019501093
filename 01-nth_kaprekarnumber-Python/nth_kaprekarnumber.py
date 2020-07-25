@@ -6,9 +6,6 @@
 # With this in mind, write the function nthKaprekarNumber(n) that takes a non-negative int n 
 # and returns the nth Kaprekar number, where as usual we start counting at n==0.
 
-
-import math
-
 def fun_nth_kaprekarnumber(n):
     i = 0
     count = -1
