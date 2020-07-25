@@ -23,7 +23,7 @@ def fun_nearestkaprekarnumber(n):
     while True:
         if fun_is_kaprekarnumber(r):
             break
-        r = r - 1
+        r = r + 1
 
     if r - n >= l - n:
         return l
