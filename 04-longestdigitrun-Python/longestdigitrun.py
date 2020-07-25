@@ -25,3 +25,6 @@ def n_arr(n):
 		digit_lst.append(rem)
 		n = n // 10
 	return digit_lst[::-1]
+
+
+print(longestdigitrun(117773732))
