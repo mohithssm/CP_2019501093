@@ -53,4 +53,4 @@ def fun_nth_smithnumber(n):
         temp = temp + 1
 
 
-print(fun_nth_smithnumber(12))
+print(fun_nth_smithnumber(10))
