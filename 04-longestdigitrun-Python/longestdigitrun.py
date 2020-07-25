@@ -12,7 +12,7 @@ def longestdigitrun(n):
 	for key, group in itertools.groupby(lst):
 		keyGroup = {key: list(group)}
 		print(keyGroup)
-		print(keyGroup.values())
+		print(len(keyGroup.values()))
 
 	x = max(sum(1 for elem in l) for n, l in itertools.groupby(lst))
 	return x
