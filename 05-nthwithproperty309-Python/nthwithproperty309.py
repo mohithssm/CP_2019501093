@@ -5,5 +5,21 @@
 # the nth number with Property309.
 
 def nthwithproperty309(n):
-	# Your code goes here
-	pass
+	count = -1
+	num = 308
+	while True:
+		if fun_isProperty309(num):
+			count = count + 1
+			if count == n:
+				return num
+		num = num + 1
+	
+
+def fun_isProperty309(n):
+	lst = list("0123456789")
+	n = n**5
+	num = str(n)
+	for elem in lst:
+		if elem not in num:
+			return False
+	return True
