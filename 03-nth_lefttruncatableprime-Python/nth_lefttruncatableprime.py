@@ -20,16 +20,16 @@ def fun_nth_lefttruncatableprime(n):
 
 
 def is_left_truncatable_prime(n):
-    if fun_isprimeNum(n):
-        return True
+    if not fun_isprimeNum(n):
+        return False
     num = str(n)
 
     for i in range(len(num)):
         if "0" in num[i:]:
             return False
         tr = int(num[i:])
-        if fun_isprimeNum(tr):
-            return True
+        if not fun_isprimeNum(tr):
+            return False
     return True
 
 
