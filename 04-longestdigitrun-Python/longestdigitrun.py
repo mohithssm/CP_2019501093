@@ -14,11 +14,12 @@ def longestdigitrun(n):
 	for i in range(len(digit_lst) - 1):
 		if digit_lst[i] == digit_lst[i+1]:
 			size = size + 1
-			print(i)
+			print(i, size)
 
 		else:
 			size = 1
-			print(i)
+			print(i, size)
+
 			
 
 		if digit_lst[i+1] not in dict_items.keys():
