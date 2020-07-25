@@ -13,4 +13,36 @@
 import math
 
 def fun_nearestkaprekarnumber(n):
-    return 1
+    l = n - 1
+    r = n + 1
+    if fun_is_kaprekarnumber(n):
+        return n
+    while n < 0:
+        if fun_is_kaprekarnumber(r):
+            break
+        r = r + 1
+
+    while n > 0:
+        if fun_is_kaprekarnumber(l):
+            break
+        l = l - 1
+
+    if r - n >= l - n:
+        return l
+    else:
+        return r
+
+
+def fun_is_kaprekarnumber(n):
+    if n == 1:
+        return True
+    sq = n*n
+    num = str(sq)
+    lst = []
+    for i in range(1, len(num)):
+        x = int(num[0:i])
+        y = int(num[i:])
+        if x != 0 and y != 0:
+            if x+y == n:
+                return True
+    return False
