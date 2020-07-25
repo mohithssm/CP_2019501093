@@ -14,9 +14,6 @@ def longestdigitrun(n):
 	for key, value in itertools.groupby(lst):
 		groups.append(len(list(value)))
 		uniqueKeys.append(key)
-	print(groups)
-	print(uniqueKeys)
-	print(max(groups))
 	i = groups.index(max(groups))
 	return uniqueKeys[i]
 def n_arr(n):
