@@ -29,7 +29,7 @@ def is_left_truncatable_prime(n):
         tr = int(num[i:])
         if fun_isprimeNum(tr):
             return True
-    return True
+    return False
 
 
 def fun_isprimeNum(n):
