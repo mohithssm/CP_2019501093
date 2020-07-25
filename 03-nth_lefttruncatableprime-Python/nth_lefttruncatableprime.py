@@ -13,7 +13,7 @@ import math
 def fun_nth_lefttruncatableprime(n):
     count = 1
     while n>= 0:
-        if is_left_truncatable_prime(count):
+        if not is_left_truncatable_prime(count):
             n = n - 1
         count = count + 1
     return count - 1
