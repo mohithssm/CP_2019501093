@@ -22,7 +22,6 @@ def longestdigitrun(n):
 		x = uniqueKeys.index(min(uniqueKeys))
 		return uniqueKeys[x]
 	else:
-
 		return uniqueKeys[i]
 	
 def n_arr(n):
