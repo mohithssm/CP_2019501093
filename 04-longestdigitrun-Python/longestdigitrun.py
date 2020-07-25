@@ -18,8 +18,8 @@ def longestdigitrun(n):
 		groups.append(len(list(value)))
 		uniqueKeys.append(key)
 	i = groups.index(max(groups))
-	# print(groups)
-	# print(uniqueKeys)
+	print(groups)
+	print(uniqueKeys)
 	if max(groups) in groups:
 		print("yes")
 	return uniqueKeys[i]
