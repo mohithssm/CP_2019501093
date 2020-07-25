@@ -25,4 +25,4 @@ def n_arr(n):
 	return digit_lst[::-1]
 
 
-print(longestdigitrun(4422113355))
+print(longestdigitrun(123330001))
