@@ -10,7 +10,7 @@ import itertools
 def longestdigitrun(n):
 	if n < 0:
 		n = abs(n)
-		
+
 	lst = n_arr(n)
 	groups = []
 	uniqueKeys = []
@@ -18,6 +18,8 @@ def longestdigitrun(n):
 		groups.append(len(list(value)))
 		uniqueKeys.append(key)
 	i = groups.index(max(groups))
+	print(groups)
+	print(uniqueKeys)
 	return uniqueKeys[i]
 def n_arr(n):
 	digit_lst = []
