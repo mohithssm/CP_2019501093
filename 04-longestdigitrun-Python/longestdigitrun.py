@@ -9,6 +9,7 @@ def longestdigitrun(n):
 	digit_lst = n_arr(n)
 	size = 1
 	max_size = 0
+	dict_items = {}
 	print(digit_lst)
 	for i in range(len(digit_lst) - 1):
 		if digit_lst[i] == digit_lst[i+1]:
@@ -18,7 +19,9 @@ def longestdigitrun(n):
 			size = 1
 		if max_size < size:
 			max_size = size
-	return size, digit_lst[i+1]
+		if digit_lst[i+1] not in dict_items.keys():
+			dict_items[digit_lst[i+1]] = max_size
+	return dict_items
 
 def n_arr(n):
 	digit_lst = []
