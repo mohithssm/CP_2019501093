@@ -6,7 +6,6 @@
 # counted twice, thus making 4 a Smith Number.
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
-import math
 
 def fun_is_smith_number(n):
     sumOfPrimeFactors = 0
