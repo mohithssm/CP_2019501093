@@ -11,12 +11,12 @@
 import math
 
 def fun_nth_lefttruncatableprime(n):
-    count = -1
+    count = 1
     while n>= 0:
         if is_left_truncatable_prime(count):
             n = n - 1
         count = count + 1
-    return count
+    return count - 1
 
 
 def is_left_truncatable_prime(n):
