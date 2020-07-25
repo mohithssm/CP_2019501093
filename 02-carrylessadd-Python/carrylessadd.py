@@ -6,13 +6,27 @@
 
 
 def fun_carrylessadd(x, y):
-	x1 = digits_lst(x)
-	y1 = digits_lst(y)
-	print(x1)
-	print(y1)
+	# x1 = digits_lst(x)
+	# y1 = digits_lst(y)
+	# print(x1)
+	# print(y1)
+	# res = "".join()
+	res = 0
+	multiplier = 1
+	bit_sum = 0
+	while x or y:
+		bit_sum = (x%10) + (y%10)
 
+		bit_sum = bit_sum % 10
 
+		res = (bit_sum * multiplier) + res
+		x = x//10
+		y = y//10
 
+		multiplier = multiplier * 10
+	return res
+
+print(fun_carrylessadd(785, 376))
 
 def digits_lst(elem):
 	lst = []
