@@ -7,9 +7,9 @@
 
 def fun_carrylessadd(x, y):
 	x1 = digits_lst(x)
-	y2 = digits_lst(y)
+	y1 = digits_lst(y)
+	print(x1)
 	print(y1)
-	print(y2)
 
 
 
@@ -22,3 +22,4 @@ def digits_lst(elem):
 		elem = elem // 10
 	return lst[::-1]
 
+print(fun_carrylessadd(785, 376))
