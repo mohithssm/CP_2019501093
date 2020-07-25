@@ -19,8 +19,6 @@ def fun_nth_lefttruncatableprime(n):
             if count == n:
                 return i
         i = i + 1
-    return count - 1
-
 
 def is_left_truncatable_prime(n):
     if not fun_isprimeNum(n):
