@@ -5,26 +5,12 @@
 # because there is a run of 3 consecutive 7's), 
 # as does longestDigitRun(-677886).
 
+import itertools
+
 def longestdigitrun(n):
-	digit_lst = n_arr(n)
-	size = 1
-	max_size = 0
-	dict_items = {}
-	print(digit_lst)
-	for i in range(len(digit_lst) - 1):
-		if digit_lst[i] == digit_lst[i+1]:
-			size = size + 1
-	
-
-		else:
-			size = 1
-			i = i + 1
-			if i+1 == len(digit_lst):
-				break
-
-		if digit_lst[i+1] not in dict_items.keys():
-			dict_items[digit_lst[i+1]] = size
-	return dict_items
+	lst = n_arr(n)
+	x = max(sum(1 for _ in l) for n, l in itertools.groupby(lst))
+	return x
 
 def n_arr(n):
 	digit_lst = []
@@ -33,6 +19,7 @@ def n_arr(n):
 		digit_lst.append(rem)
 		n = n // 10
 	return digit_lst[::-1]
+
 
 
 print(longestdigitrun(117773732))
