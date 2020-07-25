@@ -42,3 +42,6 @@ def fun_isprimeNum(n):
 		return True
 	else:
 		return False
+
+
+print(is_left_truncatable_prime(17))
