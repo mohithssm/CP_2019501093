@@ -32,4 +32,3 @@ def fun_is_kaprekarnumber(n):
             if x+y == n:
                 return True
     return False
-print(fun_is_kaprekarnumber(45))
