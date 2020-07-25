@@ -26,7 +26,7 @@ def fun_nearestkaprekarnumber(n):
         r = r + 1
         
 
-    if r - n >= l - n:
+    if r - n >= n - l:
         return l
     else:
         return r
