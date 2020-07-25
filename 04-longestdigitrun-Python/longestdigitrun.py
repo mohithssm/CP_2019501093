@@ -21,7 +21,9 @@ def longestdigitrun(n):
 	print(groups)
 	print(uniqueKeys)
 	if max(groups) in groups:
-		print("yes")
+		x = uniqueKeys.index(min(uniqueKeys))
+		print(x)
+
 	return uniqueKeys[i]
 	
 def n_arr(n):
