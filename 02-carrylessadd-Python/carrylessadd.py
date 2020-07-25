@@ -27,13 +27,3 @@ def fun_carrylessadd(x, y):
 	return res
 
 print(fun_carrylessadd(785, 376))
-
-def digits_lst(elem):
-	lst = []
-	while elem > 0:
-		rem  = elem % 10
-		lst.append(rem)
-		elem = elem // 10
-	return lst[::-1]
-
-print(fun_carrylessadd(785, 376))
