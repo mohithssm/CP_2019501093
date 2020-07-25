@@ -22,7 +22,7 @@ def longestdigitrun(n):
 	print(uniqueKeys)
 	if max(groups) in groups:
 		x = uniqueKeys.index(min(uniqueKeys))
-		print(x)
+		print(uniqueKeys[x])
 
 	return uniqueKeys[i]
 	
