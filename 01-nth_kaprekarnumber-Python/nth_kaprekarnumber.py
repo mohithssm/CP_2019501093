@@ -10,4 +10,25 @@
 import math
 
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    i = 0
+    count = -1
+    while True:
+        if fun_is_kaprekarnumber(i):
+            count = count + 1
+            if count == n:
+                return i
+        i = i + 1
+
+def fun_is_kaprekarnumber(n):
+    if n == 1:
+        return True
+    sq = n*n
+    num = str(sq)
+    lst = []
+    for i in range(1, len(num)):
+        x = int(num[i:0])
+        y = int(num[0:i])
+        if x != 0 and y != 0:
+            if x+y == n:
+                return True
+    return False 
