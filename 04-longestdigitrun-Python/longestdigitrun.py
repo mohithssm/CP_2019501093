@@ -9,6 +9,7 @@ import itertools
 
 def longestdigitrun(n):
 	lst = n_arr(n)
+	print(itertools.groupby(lst))
 	x = max(sum(1 for elem in l) for n, l in itertools.groupby(lst))
 	return x
 
