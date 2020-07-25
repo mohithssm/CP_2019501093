@@ -15,17 +15,18 @@ def fun_nearestkaprekarnumber(n):
     r = n + 1
     if fun_is_kaprekarnumber(n):
         return n
-    while n < 0:
-        if fun_is_kaprekarnumber(r):
-            break
-        r = r + 1
-
-    while True:
+    while n > 0:
         if fun_is_kaprekarnumber(l):
             break
         l = l - 1
 
-    if r - n >= n - l:
+    while True:
+        if fun_is_kaprekarnumber(r):
+            break
+        r = r + 1
+        
+
+    if r - n >= l - n:
         return l
     else:
         return r
