@@ -44,4 +44,4 @@ def fun_isprimeNum(n):
 		return False
 
 
-print(fun_nth_lefttruncatableprime(5))
+print(fun_nth_lefttruncatableprime(10))
