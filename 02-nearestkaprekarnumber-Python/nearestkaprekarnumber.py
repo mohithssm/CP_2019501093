@@ -10,8 +10,6 @@
 
 
 
-import math
-
 def fun_nearestkaprekarnumber(n):
     l = n - 1
     r = n + 1
