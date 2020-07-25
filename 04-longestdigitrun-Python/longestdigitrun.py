@@ -11,11 +11,8 @@ def longestdigitrun(n):
 	lst = n_arr(n)
 	for key, group in itertools.groupby(lst):
 		keyGroup = {key: len(list(group))}
-		
-
-		x = max(sum(1 for elem in l) for n, l in itertools.groupby(lst))
-	print(keyGroup.get(key, x))
-	return x
+		print(keyGroup.values())
+		pass
 
 def n_arr(n):
 	digit_lst = []
