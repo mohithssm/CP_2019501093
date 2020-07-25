@@ -19,10 +19,10 @@ def longestdigitrun(n):
 			size = 1
 
 
-		if max_size < size:
-			max_size = size
+		# if max_size < size:
+		# 	max_size = size
 		if digit_lst[i+1] not in dict_items.keys():
-			dict_items[digit_lst[i+1]] = max_size
+			dict_items[digit_lst[i+1]] = size
 	return dict_items
 
 def n_arr(n):
