@@ -31,4 +31,3 @@ def fun_is_kaprekarnumber(n):
         if x != 0 and y != 0:
             if x+y == n:
                 return True
-    return False 
