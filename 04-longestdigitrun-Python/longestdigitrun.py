@@ -27,5 +27,3 @@ def longestdigitrun(n):
 			break
 		x = y
 	return int(num)
-
-print(longestdigitrun(117773732))
