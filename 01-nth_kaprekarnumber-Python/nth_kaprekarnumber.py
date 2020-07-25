@@ -26,8 +26,10 @@ def fun_is_kaprekarnumber(n):
     num = str(sq)
     lst = []
     for i in range(1, len(num)):
-        x = int(num[i:0])
-        y = int(num[0:i])
+        x = int(num[0:i])
+        y = int(num[i:])
         if x != 0 and y != 0:
             if x+y == n:
                 return True
+    return False
+print(fun_is_kaprekarnumber(45))
