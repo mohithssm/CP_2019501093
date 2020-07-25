@@ -10,8 +10,8 @@ import itertools
 def longestdigitrun(n):
 	lst = n_arr(n)
 	keyGroup = {}
-	for key, group in itertools.groupby(lst):
-		print(key, group)
+	for key, value in itertools.groupby(lst):
+		print(key, )
 	return keyGroup
 def n_arr(n):
 	digit_lst = []
