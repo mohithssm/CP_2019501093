@@ -18,7 +18,7 @@ def longestdigitrun(n):
 
 		else:
 			size = 1
-			print(i, size)
+			print(i+1, size)
 
 			
 
