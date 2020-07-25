@@ -18,7 +18,7 @@ def longestdigitrun(n):
 			size = 1
 		if max_size < size:
 			max_size = size
-	return size
+	return size, digit_lst[i]
 
 def n_arr(n):
 	digit_lst = []
