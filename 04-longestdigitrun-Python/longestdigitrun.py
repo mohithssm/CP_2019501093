@@ -10,11 +10,7 @@ def longestdigitrun(n):
 	if n < 0:
 		n = abs(n)
 	n = str(n)
-	x = 0 
-	y = 0 
-	i = 0 
-	count = 0 
-	num = 0
+	y, x , i, count, num = 0, 0, 0, 0, 0
 	while y < len(n):
 		while y < len(n) and n[x] == n[y]:
 			y = y + 1
