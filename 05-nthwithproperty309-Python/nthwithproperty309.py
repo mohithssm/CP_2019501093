@@ -13,7 +13,7 @@ def nthwithproperty309(n):
 			if count == n:
 				return num
 		num = num + 1
-	
+	return
 
 def fun_isProperty309(n):
 	lst = list("0123456789")
