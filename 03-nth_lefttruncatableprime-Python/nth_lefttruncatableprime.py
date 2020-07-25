@@ -23,7 +23,6 @@ def is_left_truncatable_prime(n):
     if not fun_isprimeNum(n):
         return False
     num = str(n)
-
     for i in range(len(num)):
         if "0" in num[i:]:
             return False
