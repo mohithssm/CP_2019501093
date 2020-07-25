@@ -11,11 +11,14 @@
 import math
 
 def fun_nth_lefttruncatableprime(n):
-    count = 1
-    while n>= 0:
-        if not is_left_truncatable_prime(count):
-            n = n - 1
-        count = count + 1
+    count = -1
+    i = 0
+    while True:
+        if  is_left_truncatable_prime(i):
+            count = count + 1
+            if count == n:
+                return i
+        i = i + 1
     return count - 1
 
 
