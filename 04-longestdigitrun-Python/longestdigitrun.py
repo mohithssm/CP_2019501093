@@ -8,6 +8,8 @@
 import itertools
 
 def longestdigitrun(n):
+	if n < 0:
+		n = abs(n)
 	lst = n_arr(n)
 	groups = []
 	uniqueKeys = []
