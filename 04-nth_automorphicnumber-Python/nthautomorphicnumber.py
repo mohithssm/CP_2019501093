@@ -20,5 +20,3 @@ def isAutomorphic(num):
 		return True
 	else:
 		return False
-
-print(nthautomorphicnumbers(5))
