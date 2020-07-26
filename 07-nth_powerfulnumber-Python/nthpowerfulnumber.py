@@ -46,7 +46,7 @@ def primeFactors(num):
 	for elem in lst:
 		if elem not in factors:
 			factors.append(elem)
-
+	return factors
 		
 print(primeFactors(100))
 
