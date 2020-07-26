@@ -6,7 +6,7 @@
 import math
 
 def nthautomorphicnumbers(n):
-	count, v = 0, 0
+	count, v = 1, 0
 	while count < n:
 		v = v + 1
 		if isAutomorphic(v):
