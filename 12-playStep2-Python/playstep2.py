@@ -29,5 +29,23 @@
 # Hint: Also, remember to use % to get the one's digit, and use //= to get rid of the one's digit.
 
 def playstep2(hand, dice):
-	# your code goes here
-	pass
+	(x, y, z) = handToDice(hand)
+	if x != y and y != z and z != x:
+		x = max(x, y, z)
+		y = dice % 10
+		dice = dice // 10
+		z = dice % 10
+		dice = dice // 10
+	else:
+		if y == z:
+			x = y
+		elif x == z:
+			y = x
+		z = dice % 10
+		dice = dice // 10
+	hand = diceTo(x, y, z)
+	return hand, dice
+
+def handToDice(hand):
+	st = str(hand)
+	return int(st[0], int(st[1]), int(st[2]))
