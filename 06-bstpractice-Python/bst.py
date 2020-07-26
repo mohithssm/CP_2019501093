@@ -44,6 +44,7 @@ class BST(object):
 
         
     def search_helperfunc(self, find_val):
-        # Your code goes here
-        pass
-
+        if self.root and isinstance(find_val, int):
+            r = self.search_helperfunc(self.root, find_val)
+            return True if r else False
+        return False
