@@ -12,9 +12,8 @@ class BST(object):
         self.insert_helperfunc(self.root, new_val)
 
     def printSelf(self):
-        # Your code goes here
-        pass
-        
+        self.printSelf_helperfunc(self.root)
+
     def search(self, find_val):
         # Your code goes here
         pass
