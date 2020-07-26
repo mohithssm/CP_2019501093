@@ -8,4 +8,14 @@ def findzerowithbisection(x, epsilon):
 	# epsilon and step are initialized
 	# don't change these values
 	# epsilon
-	# your code starts here
+	l = 0
+	h = x
+	res = 0
+	while True:
+		a = abs((res**2) - x)
+		if a <= epsilon:
+			break
+		if res**2 < x:
+			l = res
+		else:
+			h = res
