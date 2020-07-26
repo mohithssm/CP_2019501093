@@ -16,7 +16,7 @@ def factors(num):
     num = mDiv(num, 2)
     num = mDiv(num, 3)
     num = mDiv(num, 5)
-    return n == 1
+    return num == 1
 
 def mDiv(num, i):
     while num % i == 0:
