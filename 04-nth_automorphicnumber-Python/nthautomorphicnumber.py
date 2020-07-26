@@ -6,12 +6,12 @@
 import math
 
 def nthautomorphicnumbers(n):
-    count = 1
-    while n>= 0:
-        if isAutomorphic(count):
-            n = n - 1
-        count = count + 1
-    return count - 1
+	count, v = 0, 0
+	while count < n:
+		v = v + 1
+		if isAutomorphic(v):
+			count = count + 1
+	return v
 
 def isAutomorphic(num):
 	x = num**2
