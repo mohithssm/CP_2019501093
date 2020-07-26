@@ -22,7 +22,7 @@ def isPower(num):
 	for elem in st:
 		if num % elem**2 == 0:
 			count = count + 1
-
+	return count
 def primeFactors(num):
 	lst = []
 	factors = []
