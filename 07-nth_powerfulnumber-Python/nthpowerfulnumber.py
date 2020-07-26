@@ -44,13 +44,4 @@ def primeFactors(num):
 			factors.append(elem)
 	return factors
 		
-print(nthpowerfulnumber(53))
-
-
-	# for i in range(len(factors)):
-	# 	if num % factors[i]**2 == 0:
-	# 		count = count + 1
-	# if count == len(factors):
-	# 	return True
-	# else:
-	# 	return False
+print(nthpowerfulnumber(0))
