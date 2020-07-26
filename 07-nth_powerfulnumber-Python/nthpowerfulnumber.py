@@ -31,6 +31,7 @@ def isPower(num):
 
 def primeFactors(num):
 	lst = []
+	factors = []
 	i = 2
 	while i*i <= num:
 		if num%i:
@@ -40,5 +41,8 @@ def primeFactors(num):
 			 lst.append(i)
 	if num > 1:
 		lst.append(num)
-	return lst
+	for elem in lst:
+		if elem not in factors:
+			factors.append(elem)
+	return factors
 print(primeFactors(100))
