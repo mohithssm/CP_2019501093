@@ -6,5 +6,20 @@
 
 
 def nthpowerfulnumber(n):
-	# Your code goes here
-	pass
+	count = 1
+	while n>= 0:
+		if isPower(count):
+			n = n - 1
+		count = count + 1
+	return count - 1
+
+def ifPower(num):
+	x = 0
+	lst = []
+	while num > 0:
+		rem = num % 10
+		lst.append(rem)
+		num = num // 10
+	if num % lst[-1] == 0 and num % lst[-1]**2 == 0:
+		return True
+	return False  		
