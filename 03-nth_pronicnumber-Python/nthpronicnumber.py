@@ -4,5 +4,12 @@
 # number n is a product of x and (x+1).
 
 def nthpronicnumber(n):
-	# Your code goes here
-	pass
+    count = 1
+    while n>= 0:
+        if isPronic(count):
+            n = n - 1
+        count = count + 1
+    return count - 1
+
+def isPronic(num):
+	return num*(num+1)
