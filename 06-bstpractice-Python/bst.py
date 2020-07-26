@@ -20,7 +20,7 @@ class BST(object):
             return True if r else False
         return False        
 
-    def insert_helperfunc(self, new_val):
+    def insert_helperfunc(self, root, new_val):
         if root is None:
             root = Node(new_val)
         else:
