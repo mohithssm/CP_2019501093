@@ -45,7 +45,7 @@ def primeFactors(num):
 			factors.append(elem)
 	return factors
 		
-print(isPower(35))
+print(nthpowerfulnumber(53))
 
 
 	# for i in range(len(factors)):
