@@ -11,7 +11,8 @@
 
 def fun_nth_carolprime(n):
     count = 1
-    while n > 0:
+    while n >= 0:
+        print(count)
         if fun_isCarolPrime(count) and fun_isPrime(count):
             n = n - 1
             count = count + 1
@@ -29,9 +30,8 @@ def fun_isPrime(n):
 		for i in range(2, n//2):
 			if n%i == 0:
 				return False
-				break
 		return True
 	else:
 		return False
 
-print(fun_nth_carolprime(0))
+print(fun_isCarolPrime(4))
