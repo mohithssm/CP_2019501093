@@ -33,4 +33,4 @@ def isprimeNum(n):
 	else:
 		return False
 
-print(nthcircularprime(1))
+print(nthcircularprime(2))
