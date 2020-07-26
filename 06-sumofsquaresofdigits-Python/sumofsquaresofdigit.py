@@ -13,4 +13,4 @@ def sumofsquaresofdigit(n):
 		n = n // 10
 	return sum
 
-print(sumofsquaresofdigit(12))
+print(sumofsquaresofdigit(5))
