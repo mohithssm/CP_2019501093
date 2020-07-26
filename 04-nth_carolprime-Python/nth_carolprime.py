@@ -34,6 +34,6 @@ def fun_isPrime(n):
 
 
 
-print(fun_isCarolPrime(1))
+print(fun_isPrime(1))
 
 
