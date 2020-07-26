@@ -28,4 +28,4 @@ def isPower(num):
 		return True
 	return False  		
 
-print(nthpowerfulnumber(0))
+print(isPower(64))
