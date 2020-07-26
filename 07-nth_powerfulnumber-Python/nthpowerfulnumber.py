@@ -26,6 +26,7 @@ def isPower(num):
 		return True
 	else:
 		return False
+		
 def primeFactors(num):
 	lst = []
 	factors = []
