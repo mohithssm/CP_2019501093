@@ -36,4 +36,4 @@ def isprimeNum(n):
 			return False
 		x = x + 6
 	return True
-print(nthcircularprime(4))
+	
