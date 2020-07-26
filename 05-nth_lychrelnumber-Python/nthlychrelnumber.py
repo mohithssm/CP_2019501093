@@ -15,7 +15,7 @@ def nthlychrelnumbers(n):
 
 def isLychrelNum(num):
 	for i in range(30):
-		num = num + int(str((num)[::-1]))
+		num = num + int(str(num)[::-1])
 		if num == int(str(num)[::-1]):
 			return False
 	return True
