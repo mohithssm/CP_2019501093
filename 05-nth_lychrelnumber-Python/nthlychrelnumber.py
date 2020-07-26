@@ -20,3 +20,5 @@ def isLychrelNum(num):
 		if num == int(palind):
 			return False
 	return True
+
+print(isLychrelNum(196))
