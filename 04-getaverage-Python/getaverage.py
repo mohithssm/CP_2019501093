@@ -7,8 +7,6 @@
 # strings and averages 13 and 14 to return 13.5. Also, getAverage('a,b,c') returns 0.
 
 
-
-
 def fun_getaverage(s): 
 	return 0.0
 
