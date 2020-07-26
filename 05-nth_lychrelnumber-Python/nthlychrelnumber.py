@@ -12,3 +12,10 @@ def nthlychrelnumbers(n):
 		if isAutomorphic(v):
 			count = count + 1
 	return v
+
+def isLychrelNum(num):
+	for i in range(45):
+		num = num + int(str((num)[::-1]))
+		if num == int(str(num)[::-1]):
+			return False
+	return True
