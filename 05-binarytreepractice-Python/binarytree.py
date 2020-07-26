@@ -40,5 +40,5 @@ class BinaryTree(object):
             traversal.append(start.value)
             if start.left:
                 self.preorder_print(self.left, traversal)
-            # if start.right:
-            #     self.preorder_print(self.right, traversal)
+            if start.right:
+                self.preorder_print(self.right, traversal)
