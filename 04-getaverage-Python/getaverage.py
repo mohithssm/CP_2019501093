@@ -17,4 +17,4 @@ def fun_getaverage(s):
 		avg = sum(arr)/len(arr)
 		return avg
 	else:
-		pass
+		return 0.0
