@@ -19,5 +19,5 @@ def findzerowithbisection(x, epsilon):
 			l = res
 		else:
 			h = res
-		res = (low+high)/2
+		res = (l+h)/2
 	return res
