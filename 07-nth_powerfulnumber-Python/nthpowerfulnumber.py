@@ -38,7 +38,5 @@ def primeFactors(num):
 			while num % i == 0:
 				lst.append(i)
 				num = num // i
-	if num > 2:
-		lst.append(num)
 	return lst
 print(primeFactors(315))
