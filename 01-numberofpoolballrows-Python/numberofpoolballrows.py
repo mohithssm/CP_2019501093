@@ -6,9 +6,6 @@
 # numberOfPoolBallRows(7) returns 4 (since the 4th row must have a single ball in it).
 
 def fun_numberofpoolballrows(balls):
-	a = 1
-	d = 1
-	x = (balls/2) * (2*a + (balls-1)*d)
-	return int(balls)
-print(fun_numberofpoolballrows(5))
-
+	for i in  range(1, sys.maxint):
+		if balls <= (i * (i + 1)/2):
+			return i
