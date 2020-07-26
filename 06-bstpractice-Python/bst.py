@@ -15,9 +15,10 @@ class BST(object):
         self.printSelf_helperfunc(self.root)
 
     def search(self, find_val):
-        # Your code goes here
-        pass
-
+        if self.root and isinstance(find_val, int):
+            r = self.search_helperfunc(self.root, find_val)
+            return True if r else False
+        return False        
 
     def insert_helperfunc(self, new_val):
         if root is None:
@@ -44,7 +45,10 @@ class BST(object):
 
         
     def search_helperfunc(self, find_val):
-        if self.root and isinstance(find_val, int):
-            r = self.search_helperfunc(self.root, find_val)
-            return True if r else False
-        return False
+        if root is None or root.value == find_val:
+            return root
+        if root.value < find_val:
+            return self.search_helperfunc(root.right, find_val)
+        else:
+            return self.search_helperfunc(root.left, find_val)
+
