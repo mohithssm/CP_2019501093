@@ -9,7 +9,7 @@ def nthlychrelnumbers(n):
 	count, v = 1, 196
 	while count < n:
 		v = v + 1
-		if isAutomorphic(v):
+		if isLychrelNum(v):
 			count = count + 1
 	return v
 
