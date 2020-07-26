@@ -17,7 +17,8 @@ def fun_nth_happy_number(n):
 		if ishappynumber(count):
 			n = n - 1
 		count = count + 1
-	return count-1	
+	return count-1
+		
 def ishappynumber(n):
 	arr = []
 	if n < 0:
@@ -29,4 +30,3 @@ def ishappynumber(n):
 		arr.append(n)
 	return True
 
-print(fun_nth_happy_number(2))
