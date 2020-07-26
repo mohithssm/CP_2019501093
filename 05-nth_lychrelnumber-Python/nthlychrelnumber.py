@@ -21,4 +21,4 @@ def isLychrelNum(num):
 			return False
 	return True
 
-print(isLychrelNum(394))
+print(isLychrelNum(1671))
