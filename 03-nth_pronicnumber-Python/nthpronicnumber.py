@@ -5,12 +5,12 @@
 import math
 
 def nthpronicnumber(n):
-    count = 1
-    while n>= 0:
-        if isPronic(count):
-            n = n - 1
-        count = count + 1
-    return count - 1
+	count, v = 0, 0
+	while count < n:
+		v = v + 1
+		if isPronic(count):
+			count = count + 1
+	return v
 
 def isPronic(n):
 	num = (int)(math.sqrt(n))
