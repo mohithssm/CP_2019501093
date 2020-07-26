@@ -13,7 +13,7 @@ def nthpowerfulnumber(n):
 		count = count + 1
 	return count - 1
 
-def ifPower(num):
+def isPower(num):
 	x = 0
 	lst = []
 	while num > 0:
@@ -23,3 +23,5 @@ def ifPower(num):
 	if num % lst[-1] == 0 and num % lst[-1]**2 == 0:
 		return True
 	return False  		
+
+print(nthpowerfulnumber(10))
