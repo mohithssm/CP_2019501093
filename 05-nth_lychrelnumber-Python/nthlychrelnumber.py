@@ -6,5 +6,9 @@
 
 
 def nthlychrelnumbers(n):
-	# your code goes here
-	pass
+	count, v = 1, 196
+	while count < n:
+		v = v + 1
+		if isAutomorphic(v):
+			count = count + 1
+	return v
