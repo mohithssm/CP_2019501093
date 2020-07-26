@@ -14,9 +14,9 @@ def nthautomorphicnumbers(n):
 	return v
 
 def isAutomorphic(num):
-	x = num**2
-	print(x)
-	if str(num) in str(x):
+	x = str(num**2)
+	
+	if num == int(x[len(x) - len(str(num)):]):
 		return True
 	else:
 		return False
