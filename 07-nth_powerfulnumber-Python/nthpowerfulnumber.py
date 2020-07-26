@@ -6,12 +6,15 @@
 
 
 def nthpowerfulnumber(n):
-	count = 1
-	while n>= 0:
-		if isPower(count):
-			n = n - 1
-		count = count + 1
-	return count - 1
+	if n == 0:
+		return 1
+	else:
+		count = 1
+		while n>= 0:
+			if isPower(count):
+				n = n - 1
+			count = count + 1
+		return count - 1
 
 def isPower(num):
 	x = 0
@@ -25,4 +28,4 @@ def isPower(num):
 		return True
 	return False  		
 
-print(isPower(64))
+print(nthpowerfulnumber(0))
