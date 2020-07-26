@@ -40,5 +40,5 @@ def primeFactors(num):
 				num = num // i
 	if num > 2:
 		lst.append(num)
-
-print(isPower(23))
+	return lst
+print(primeFactors(315))
