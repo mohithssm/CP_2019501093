@@ -7,6 +7,6 @@
 import sys
 
 def fun_numberofpoolballrows(balls):
-	for i in  range(1, sys.maxint):
+	for i in  range(1, 1000000):
 		if balls <= (i * (i + 1)/2):
 			return i
