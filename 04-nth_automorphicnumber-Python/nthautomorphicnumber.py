@@ -20,4 +20,4 @@ def isAutomorphic(num):
 	else:
 		return False
 
-print(nthautomorphicnumbers(4))
+print(nthautomorphicnumbers(5))
