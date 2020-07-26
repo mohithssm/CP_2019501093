@@ -15,7 +15,7 @@ class HashTable(object):
         if self.table[hasVal]:
             self.table[hasVal].append(string)
         else:
-            self.table[hasVal] =  [strin]
+            self.table[hasVal] =  [string]
 
 
     def lookup(self, string):
