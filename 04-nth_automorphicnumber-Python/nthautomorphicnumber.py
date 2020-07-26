@@ -15,8 +15,8 @@ def nthautomorphicnumbers(n):
 
 def isAutomorphic(num):
 	x = num**2
-	rem = num %10
-	if rem == num:
+	
+	if str(num) in str(x):
 		return True
 	else:
 		return False
