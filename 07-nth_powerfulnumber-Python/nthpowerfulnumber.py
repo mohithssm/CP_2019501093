@@ -29,14 +29,16 @@ def isPower(num):
 	else:
 		return False  		
 
-def isprimeNum(n):
-	if n > 1:
-		for i in range(2, n//2):
-			if n%i == 0:
-				return False
-				break
-		return True
-	else:
-		return False
+def primeFactors(num):
+	lst = []
+	while num % 2 == 0:
+		lst.append(2)
+		n = n // 2
+		for i in range(3, int(math.sqrt(num))+1, 2):
+			while num % i == 0:
+				lst.append(i)
+				num = num // i
+	if num > 2:
+		lst.append(num)
 
 print(isPower(23))
