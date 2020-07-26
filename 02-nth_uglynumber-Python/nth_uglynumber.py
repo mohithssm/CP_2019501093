@@ -4,4 +4,22 @@
 
 
 def fun_nth_uglynumber(n):
-    return 0
+    count = 1
+    while n>= 0:
+        if isUgly(count):
+            n = n - 1
+        count = count + 1
+    return count - 1
+
+
+def factors(num):
+    num = mDiv(num, 2)
+    num = mDiv(num, 3)
+    num = mDiv(num, 5)
+    return n == 1
+
+def mDiv(num, i):
+    while num % i == 0:
+        num = num // i
+    return num
+
