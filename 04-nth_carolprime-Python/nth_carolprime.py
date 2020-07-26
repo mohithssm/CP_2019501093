@@ -23,7 +23,7 @@ def fun_isCarolPrime(n):
     return 4**n-2**(n+1)-1
     
 
-def fun_isPrime(n):
+def fun_isprime(n):
 	if n > 1:
 		for i in range(2, n//2):
 			if n%i == 0:
@@ -34,6 +34,6 @@ def fun_isPrime(n):
 
 
 
-print(fun_isPrime(3))
+print(fun_isprime(4))
 
 
