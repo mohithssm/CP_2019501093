@@ -12,8 +12,10 @@ class BinaryTree(object):
         """Return True if the value
         is in the tree, return
         False otherwise."""
-        # Your code goes here
-        pass
+        if self.root and isinstance(find_val, int):
+            return self.preorder_search(self.root, find_val)
+        else:
+            return False        
 
     def print_tree(self):
         """Print out all tree nodes
