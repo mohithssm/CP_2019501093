@@ -25,4 +25,4 @@ def isPower(num):
 		return True
 	return False  		
 
-print(nthpowerfulnumber(10))
+print(isPower(10))
