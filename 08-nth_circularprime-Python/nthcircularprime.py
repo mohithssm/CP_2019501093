@@ -28,7 +28,7 @@ def isprimeNum(n):
 		return False
 	if n <= 3:
 		return True
-	if n%2 == 0 and n%3==0:
+	if n%2 == 0 or n%3==0:
 		return False
 	x = 5
 	while x*x <= n:
