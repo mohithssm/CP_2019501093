@@ -35,4 +35,4 @@ def fun_isPrime(n):
 	else:
 		return False
 
-print(fun_isCarolPrime(5))
+print(fun_isCarolPrime(4))
