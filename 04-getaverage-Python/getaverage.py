@@ -8,5 +8,13 @@
 
 
 def fun_getaverage(s): 
-	return 0.0
-
+	st = s.split(",")
+	arr = []
+	for elem in st:
+		if elem.isdigit():
+			arr.append(int(elem))
+	if len(arr) != 0:
+		avg = sum(arr)/len(arr)
+		return avg
+	else:
+		pass
