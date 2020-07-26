@@ -31,12 +31,14 @@ def isPower(num):
 
 def primeFactors(num):
 	lst = []
-	while num % 2 == 0:
-		# lst.append(2)
-		n = n // 2
-		for i in range(3, int(math.sqrt(num))+1, 2):
-			while num % i == 0:
-				lst.append(i)
-				num = num // i
+	i = 2
+	while i*i <= num:
+		if num%i:
+			i = i + 1
+		else:
+			 num = num // i
+			 lst.append(i)
+	if num > 1:
+		lst.append(num)
 	return lst
 print(primeFactors(315))
