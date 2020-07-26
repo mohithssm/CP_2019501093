@@ -44,7 +44,7 @@ class BST(object):
             self.printSelf_helperfunc(root.right)
 
         
-    def search_helperfunc(self, find_val):
+    def search_helperfunc(self, root, find_val):
         if root is None or root.value == find_val:
             return root
         if root.value < find_val:
