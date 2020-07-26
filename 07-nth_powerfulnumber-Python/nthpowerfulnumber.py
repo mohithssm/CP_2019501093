@@ -28,4 +28,4 @@ def isPower(num):
 		return True
 	return False  		
 
-print(isPower(15))
+print(isPower(123))
