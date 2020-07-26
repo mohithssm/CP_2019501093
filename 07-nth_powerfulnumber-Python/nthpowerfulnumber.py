@@ -26,6 +26,7 @@ def isPower(num):
 	print(lst[-1]**2)
 	if num % lst[-1] == 0 and num % lst[-1]**2 == 0:
 		return True
-	return False  		
+	else:
+		return False  		
 
 print(isPower(23))
