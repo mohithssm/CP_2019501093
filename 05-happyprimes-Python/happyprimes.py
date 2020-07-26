@@ -10,5 +10,27 @@
 # However, they also are here specifically because they are just the right helper 
 # functions to make nthHappyNumber(n) easier to write!
 def ishappyprimenumber(n):
-    # Your code goes here
-    pass
+    if ishappynumber(n) and isprimeNum(n):
+        return True
+    return False
+
+def ishappynumber(n):
+	arr = []
+	if n < 0:
+		return False
+	while n != 1:
+		n = sum(int(i)**2 for i in str(n))
+		if n in arr:
+			return False
+		arr.append(n)
+	return True
+
+def isprimeNum(n):
+	if n > 1:
+		for i in range(2, n//2):
+			if n%i == 0:
+				return False
+				break
+		return True
+	else:
+		return False
