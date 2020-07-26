@@ -45,7 +45,13 @@ def playstep2(hand, dice):
 		dice = dice // 10
 	hand = diceTo(x, y, z)
 	return hand, dice
-
 def handToDice(hand):
 	st = str(hand)
-	return int(st[0], int(st[1]), int(st[2]))
+	return int(st[0]), int(st[1]), int(st[2])
+
+def diceTo(x, y, z):
+	max_i = max(x, y, z)
+	min_i = min(x, y, z)
+	mid = (x + y + z) - (max_i - min_i)
+	res = (max_i * 100) + (mid * 10) + min_i
+
