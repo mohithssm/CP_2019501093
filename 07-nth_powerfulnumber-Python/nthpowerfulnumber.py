@@ -33,6 +33,8 @@ def primeFactors(num):
 	lst = []
 	factors = []
 	i = 2
+	count = 0
+
 	while i*i <= num:
 		if num%i:
 			i = i + 1
@@ -44,5 +46,12 @@ def primeFactors(num):
 	for elem in lst:
 		if elem not in factors:
 			factors.append(elem)
-	return factors
+	for i in range(len(factors)):
+		if num % factors[i]**2 == 0:
+			count = count + 1
+	if count == len(factors):
+		return True
+	else:
+		return False
+		
 print(primeFactors(100))
