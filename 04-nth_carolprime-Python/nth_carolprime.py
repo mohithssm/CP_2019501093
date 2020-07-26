@@ -25,7 +25,8 @@ def fun_isCarolPrime(n):
     res = ((2**n - 1)**2 - 2)
     
     if fun_isPrime(res):
-        print(lst.append(res))
+        lst.append(res)
+        print(lst)
         return True
     else:
         return False
