@@ -8,7 +8,7 @@ def nthpronicnumber(n):
 	count, v = 0, 0
 	while count < n:
 		v = v + 1
-		if isPronic(count):
+		if isPronic(v):
 			count = count + 1
 	return v
 
