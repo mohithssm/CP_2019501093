@@ -20,6 +20,7 @@ def isPower(num):
 	count = 0
 	st = primeFactors(num)
 	for elem in st:
+		print(elem**2)
 		if num % elem**2 == 0:
 			count = count + 1
 		return count
