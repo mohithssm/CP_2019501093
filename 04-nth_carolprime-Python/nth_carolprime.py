@@ -34,4 +34,4 @@ def fun_isPrime(n):
 	else:
 		return False
 
-print(fun_isCarolPrime(10))
+print(fun_isCarolPrime(3))
