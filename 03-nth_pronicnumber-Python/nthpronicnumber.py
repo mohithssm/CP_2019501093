@@ -13,8 +13,8 @@ def nthpronicnumber(n):
     return count - 1
 
 def isPronic(num):
-	n = int(math.sqrt(num))
-	if (n*(n+1) == num):
+	n = (int)(math.sqrt(num))
+	if ((n)*(n+1) == num):
 		return True
 	else:
 		return False
