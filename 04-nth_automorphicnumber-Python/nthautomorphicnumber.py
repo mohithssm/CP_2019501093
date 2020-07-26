@@ -4,5 +4,9 @@
 # 76 and 890625 are all automorphic numbers.
 
 def nthautomorphicnumbers(n):
-	# Your code goes here
-	pass
+    count = 1
+    while n>= 0:
+        if isTidy(count):
+            n = n - 1
+        count = count + 1
+    return count - 1
