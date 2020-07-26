@@ -3,7 +3,6 @@
 # and returns the nth happy prime number (where the 0th happy prime number is 7).
 
 
-
 def fun_nth_happy_prime(n):
 	count = 1
 	while n>= 0:
