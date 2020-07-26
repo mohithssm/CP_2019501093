@@ -11,3 +11,5 @@ def sumofsquaresofdigit(n):
 		lst.append(rem)
 		n = n // 10
 	print(lst[::-1])
+
+print(sumofsquaresofdigit(12))
