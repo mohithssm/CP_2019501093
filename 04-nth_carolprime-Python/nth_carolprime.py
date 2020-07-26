@@ -29,7 +29,10 @@ def fun_isprime(n):
     if n > 1:
         for i in range(2, n//2):
             if n % i == 0:
+                lst.append(i)
                 return False
+           
+        print(lst)
         return True
     else:
         return False
