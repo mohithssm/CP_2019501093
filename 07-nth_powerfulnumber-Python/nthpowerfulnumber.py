@@ -45,7 +45,7 @@ def primeFactors(num):
 			factors.append(elem)
 	return factors
 		
-print(isPower(100))
+print(isPower(36))
 
 
 	# for i in range(len(factors)):
