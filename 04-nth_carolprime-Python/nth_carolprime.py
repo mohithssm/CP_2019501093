@@ -15,7 +15,6 @@ def fun_nth_carolprime(n):
     while n >= 0:
         if fun_isCarolPrime(count) and fun_isPrime(count):
             lst.append(count)
-            print(lst)
             n = n - 1
             count = count + 1
     return count - 1
