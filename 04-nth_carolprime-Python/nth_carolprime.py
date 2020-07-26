@@ -19,6 +19,7 @@ def fun_nth_carolprime(n):
 
 def fun_isCarolPrime(n):
     res = ((2**n - 1)**2 - 2)
+    print(res)
     if fun_isPrime(res):
         return True
     else:
