@@ -7,7 +7,6 @@
 
 
 def fun_set_kth_digit(n, k, d):
-	
 	lst = list(str(n)[::-1])
 	try:
 		if lst[k] in "0123456789":
@@ -19,5 +18,3 @@ def fun_set_kth_digit(n, k, d):
 	except:
 		lst.append(str(d))
 		return int("".join(lst[::-1]))
-
-
