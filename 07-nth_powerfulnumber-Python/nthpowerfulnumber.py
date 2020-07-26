@@ -23,7 +23,7 @@ def isPower(num):
 		rem = num % 10
 		lst.append(rem)
 		num = num // 10
-	print(lst[-1]**2)
+	print(num % lst[-1])
 	if num % lst[-1] == 0 and num % lst[-1]**2 == 0:
 		return True
 	else:
