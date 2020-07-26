@@ -14,7 +14,11 @@ def nthautomorphicnumbers(n):
     return count - 1
 
 def isAutomorphic(num):
-	if math.sqrt(num) == num**2:
+	x = num**2
+	rem = num %10
+	if rem == num:
 		return True
 	else:
 		return False
+
+print(isAutomorphic(5))
