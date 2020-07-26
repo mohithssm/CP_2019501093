@@ -7,4 +7,16 @@
 # fun_nth_tidynumber(35) = 46
 
 def fun_nth_tidynumber(n):
-    return 0
+    count = 1
+    while n>= 0:
+        if isTidy(count):
+            n = n - 1
+        count = count + 1
+    return count - 1
+
+def isTidy(num):
+    st = str(num)
+    for i in range(len(st)-1):
+        if st[i] > st[i+1]:
+            return False
+    return True
