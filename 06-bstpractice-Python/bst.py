@@ -36,8 +36,13 @@ class BST(object):
                     self.insert_helperfunc(root.left, new_val)
 
     def printSelf_helperfunc(self):
-        # Your code goes here
-        pass
+        if root is None:
+            return
+        else:
+            print(" ",root.value)
+            self.printSelf_helperfunc(root.left)
+            self.printSelf_helperfunc(root.right)
+
         
     def search_helperfunc(self, find_val):
         # Your code goes here
