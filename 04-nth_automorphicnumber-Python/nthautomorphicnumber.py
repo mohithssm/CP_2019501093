@@ -15,7 +15,7 @@ def nthautomorphicnumbers(n):
 
 def isAutomorphic(num):
 	x = num**2
-	
+	print(x)
 	if str(num) in str(x):
 		return True
 	else:
