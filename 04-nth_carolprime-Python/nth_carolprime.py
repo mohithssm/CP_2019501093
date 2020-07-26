@@ -34,6 +34,6 @@ def fun_isPrime(n):
 
 
 
-print(fun_isPrime(5))
+print(fun_isPrime(3))
 
 
