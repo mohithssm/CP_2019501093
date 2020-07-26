@@ -44,4 +44,3 @@ def primeFactors(num):
 			factors.append(elem)
 	return factors
 		
-print(nthpowerfulnumber(0))
