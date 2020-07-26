@@ -21,4 +21,4 @@ def isAutomorphic(num):
 	else:
 		return False
 
-print(isAutomorphic(6))
+print(isAutomorphic(76))
