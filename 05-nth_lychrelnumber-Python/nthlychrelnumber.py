@@ -16,8 +16,8 @@ def nthlychrelnumbers(n):
 def isLychrelNum(num):
 	palind = str(num)[::-1]
 	for i in range(30):
-		num = num + int(palind)
-		if num == int(palind):
+		num = num + int(str(num)[::-1])
+		if num == int(str(num)[::-1]):
 			return False
 	return True
 
