@@ -24,13 +24,16 @@ def nthcircularprime(n):
 	return i - 1
 
 def isprimeNum(n):
-	if n > 1:
-		for i in range(2, n//2):
-			if n%i == 0:
-				return False
-				break
-		return True
-	else:
+	if n <= 1:
 		return False
-
+	if n <= 3:
+		return True
+	if n%2 == 0 and n%3==0:
+		return False
+	x = 5
+	while x*x <= n:
+		if (n%x == 0 or n%(x+2) == 0):
+			return False
+		x = x + 6
+	return True
 print(nthcircularprime(4))
