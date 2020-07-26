@@ -6,7 +6,7 @@
 def fun_nth_uglynumber(n):
     count = 1
     while n>= 0:
-        if isUgly(count):
+        if mDiv(count):
             n = n - 1
         count = count + 1
     return count - 1
