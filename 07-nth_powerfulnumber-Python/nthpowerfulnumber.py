@@ -17,14 +17,16 @@ def nthpowerfulnumber(n):
 		return count - 1
 
 def isPower(num):
+	count = 0
 	st = primeFactors(num)
-	return st	
+	for elem in st:
+		if num % elem**2 == 0:
+			count = count + 1
 
 def primeFactors(num):
 	lst = []
 	factors = []
 	i = 2
-	count = 0
 
 	while i*i <= num:
 		if num%i:
