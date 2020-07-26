@@ -6,5 +6,29 @@
 # note that 197 is prime, as is 971 (rotated left), as is 719 (rotated left again).
 
 def nthcircularprime(n):
-	# Your code goes here
-	pass
+	i = 1
+	count = 1
+	while count <= n:
+		if isprimeNum(i):
+			c = 1
+			x = i
+			for j in range(len(str(i)) - 1):
+				x = str(x)
+				x = x[-1] + x[:len(x)-1]
+				x = int(x)
+				if isprimeNum(x) and x != i:
+					c  = c + 1
+			if c == len(str(i)):
+				count = count + 1
+		i = i + 1
+	return i - 1
+
+def isprimeNum(n):
+	if n > 1:
+		for i in range(2, n//2):
+			if n%i == 0:
+				return False
+				break
+		return True
+	else:
+		return False
