@@ -20,8 +20,8 @@ def fun_nth_carolprime(n):
     return fun_isCarolPrime(i-1)
 
 def fun_isCarolPrime(n):
-    res = 4**n-2**(n+1)-1
-    return res
+    return 4**n-2**(n+1)-1
+    
 
 def fun_isPrime(n):
 	if n > 1:
