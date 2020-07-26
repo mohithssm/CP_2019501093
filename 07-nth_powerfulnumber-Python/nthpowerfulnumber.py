@@ -41,4 +41,4 @@ def primeFactors(num):
 	if num > 1:
 		lst.append(num)
 	return lst
-print(primeFactors(315))
+print(primeFactors(100))
