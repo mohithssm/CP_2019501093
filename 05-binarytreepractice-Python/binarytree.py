@@ -21,8 +21,7 @@ class BinaryTree(object):
         """Print out all tree nodes
         as they are visited in
         a pre-order traversal."""
-        # Your code goes here
-        pass
+        self.preorder_print(self.root)
 
     def preorder_search(self, start, find_val):
         """Helper method - use this to create a 
