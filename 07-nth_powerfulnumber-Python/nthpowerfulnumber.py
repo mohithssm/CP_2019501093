@@ -49,6 +49,7 @@ def primeFactors(num):
 	for i in range(len(factors)):
 		if num % factors[i]**2 == 0:
 			count = count + 1
+			print(count)
 	if count == len(factors):
 		return True
 	else:
