@@ -24,7 +24,7 @@ def digit_count(num):
     while num > 0:
         num = num % 10
         count = count + 1
-        num = num // 10
+        num = num / 10
     return count
 
 def is_left_truncatable_prime(n):
@@ -39,11 +39,11 @@ def is_left_truncatable_prime(n):
         return False
 
 def fun_isprimeNum(n):
-    if n == 1:
-        return False
-    for i in range(2, n//2+1):
-        if n%i == 0:
-            return False
-    return True
+    if n > 1:
+        for i in range(2, n):
+            if n%i == 0:
+                return False
+        return True
+    return False
 	
 print(is_left_truncatable_prime(2))
