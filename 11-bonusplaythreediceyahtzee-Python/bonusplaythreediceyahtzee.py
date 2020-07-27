@@ -40,5 +40,53 @@
 
 
 def bonusplaythreediceyahtzee(dice):
-	# Your code goes here
-	pass
+	dice = str(dice)
+	x = int(dice[:4])
+	y = int(dice[4:])
+	y, x = playstep2(y, x)
+	y, x = playstep2(y, x)
+	return y, score(y)
+
+def score(hand):
+	(x, y, z) = handToDice(hand)
+	if x != y and y != z and z != x:
+		x = max(x, y, z)
+		return x
+	elif x == y and y == z and z == x:
+		return 20 + x + y + z
+	elif x == y:
+		return 10 + x + y
+	elif y == z:
+		return 10 + y + z
+	elif x == z:
+		return 10 + x + z	
+
+
+def playstep2(hand, dice):
+	(x, y, z) = handToDice(hand)
+	if x != y and y != z and z != x:
+		x = max(x, y, z)
+		y = dice % 10
+		dice = dice // 10
+		z = dice % 10
+		dice = dice // 10
+	else:
+		if y == z:
+			x = y
+		elif x == z:
+			y = x
+		z = dice % 10
+		dice = dice // 10
+	hand = diceTo(x, y, z)
+	return hand, dice
+
+def handToDice(hand):
+	st = str(hand)
+	return int(st[0]), int(st[1]), int(st[2])
+
+def diceTo(x, y, z):
+	max_i = max(x, y, z)
+	min_i = min(x, y, z)
+	mid = (x + y + z) - (max_i + min_i)
+	res = (max_i * 100) + (mid * 10) + min_i
+	return res
