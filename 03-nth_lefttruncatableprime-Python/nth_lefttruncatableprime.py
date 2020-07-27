@@ -11,7 +11,7 @@
 import math
 
 def fun_nth_lefttruncatableprime(n):
-    count = 1
+
     lst = []
     for i in range(5000):
         if is_left_truncatable_prime(i):
@@ -32,7 +32,7 @@ def is_left_truncatable_prime(n):
     else:
         digit = digit_count(n)
         for i in range(1, digit):
-            num = n % (10**i)
+            num = n%(10**i)
             if fun_isprimeNum(num):
                 return True
         return False
@@ -43,5 +43,4 @@ def fun_isprimeNum(n):
 			if n%i == 0:
 				return False
 		return True
-	else:
-		return False
+	return False
