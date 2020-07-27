@@ -17,8 +17,8 @@ def fun_nth_lefttruncatableprime(n):
         num = num + 1
         if is_left_truncatable_prime(num):
             count = count + 1
-    return num - 1
-    
+    return num
+
 def digit_count(num):
     count = 0
     while num > 0:
