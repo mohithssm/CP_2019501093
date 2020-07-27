@@ -39,7 +39,7 @@ def is_left_truncatable_prime(n):
 
 def fun_isprimeNum(n):
 	if n > 1:
-		for i in range(2, n):
+		for i in range(2, n//2):
 			if n%i == 0:
 				return False
 		return True
