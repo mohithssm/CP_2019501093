@@ -51,11 +51,11 @@ class Graph(object):
             for j in range(len(x[i])):
                 if x[i].count(0) != len(self.edges)+1:
                     if x[i][j]:
-                        l.append((j, x[i][j]))
+                        lst.append((j, x[i][j]))
                 else:
                     break
-            if len(l) != 0:
-                adjacency_list[i] = l
+            if len(lst) != 0:
+                adjacency_list[i] = lst
         return adjacency_list
     
     
