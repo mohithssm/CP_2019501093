@@ -18,21 +18,25 @@ def fun_nth_lefttruncatableprime(n):
         count = count + 1
     return count - 1
 
+def digit_count(num):
+    count = 0
+    while num > 0:
+        num = num % 10
+        count = count + 1
+        num = num // 10
+    return count
 
 def is_left_truncatable_prime(n):
-    if fun_isprimeNum(n):
+    if not fun_isprimeNum(n):
         return False
-    num = str(n)
-
-    for i in range(len(num)):
-        if "0" in num[i:]:
-            return False
-        tr = int(num[i:])
-        if fun_isprimeNum(tr):
-            return False
-    return True
-
-
+    else:
+        digit = digit_count(n)
+        for i in range(1, digit):
+            num = n % (10**i)
+            if fun_isprimeNum(num):
+                return True
+        return False
+        
 def fun_isprimeNum(n):
 	if n > 1:
 		for i in range(2, n//2):
