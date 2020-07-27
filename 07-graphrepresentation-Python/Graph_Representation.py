@@ -60,7 +60,7 @@ class Graph(object):
     
     
     def get_adjacency_matrix(self):
-        adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
+        adjacency_matrix = [[0 for i in range(len(self.edges) + 1)] for j in range(len(self.edges) + 1)]
         for elem in self.edges:
             adjacency_matrix[i.node_from.value][i.node_to.value] = i.value
         return adjacency_matrix
