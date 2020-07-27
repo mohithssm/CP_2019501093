@@ -12,11 +12,11 @@ import math
 
 def fun_nth_lefttruncatableprime(n):
     count = 1
-    while n>= 0:
-        if is_left_truncatable_prime(count):
-            n = n - 1
-        count = count + 1
-    return count - 1
+    lst = []
+    for i in range(5000):
+        if is_left_truncatable_prime(i):
+            lst.append(i)
+    return lst[n]
 
 def digit_count(num):
     count = 0
