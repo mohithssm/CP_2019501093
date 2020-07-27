@@ -55,4 +55,4 @@ def diceTo(x, y, z):
 	min_i = min(x, y, z)
 	mid = (x + y + z) - (max_i + min_i)
 	res = (max_i * 100) + (mid * 10) + min_i
-
+	return res
