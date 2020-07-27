@@ -13,7 +13,7 @@ import math
 def fun_nth_lefttruncatableprime(n):
 
     lst = []
-    for i in range(5000):
+    for i in range(8000):
         if is_left_truncatable_prime(i):
             lst.append(i)
     return lst[n]
