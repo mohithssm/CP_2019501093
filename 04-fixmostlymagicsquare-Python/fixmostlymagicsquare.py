@@ -7,5 +7,17 @@
 
 
 def fixmostlymagicsquare(L):
-	pass
-	# Your code goes here
+	r = [sum(elem) for elem in L]
+	c = [0] * len(L)
+	for i in range(len(L)):
+		for j in range(len(L)):
+			c[j] = c[j] + L[i][j]
+	for elem in r:
+		if r.count(elem) > 1:
+			val = elem
+		elif r.count(elem) == 1:
+			odd = elem
+	x1 = r.index(odd)
+	x2 = c.index(odd)
+	L[x1][x2] = L[x1][x2] - (odd - val)
+	return L
