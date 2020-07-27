@@ -40,7 +40,7 @@ class Graph(object):
     def get_edge_list(self):
         edge_list = []
         for elem in self.edges:
-            edge_list.append(i.value, i.node_from.value, i.node_to.value)
+            edge_list.append(elem.value, elem.node_from.value, elem.node_to.value)
         return edge_list
 
     def get_adjacency_list(self):
