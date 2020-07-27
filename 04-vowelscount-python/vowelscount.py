@@ -1,0 +1,2 @@
+def vowelscount(S):
+    pass
