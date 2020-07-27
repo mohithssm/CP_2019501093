@@ -28,8 +28,8 @@ def digit_count(num):
     return count
 
 def is_left_truncatable_prime(n):
-    if fun_isprimeNum(n):
-        return True
+    if not fun_isprimeNum(n):
+        return False
     else:
         digit = digit_count(n)
         for i in range(1, digit):
