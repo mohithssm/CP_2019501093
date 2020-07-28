@@ -16,11 +16,12 @@ def leastfrequentletters(s):
 	s = s.lower()
 	for elem in s:
 		if elem not in mostfreqletters:
-			mostfreqletters.append(elem)
-			if elem in leastfreqletters:
-				leastfreqletters.append(elem)			
+			mostfreqletters.append(elem)		
 		else:
 			leastfreqletters.append(elem)
+	for elem in mostfreqletters:
+		if elem in leastfreqletters:
+			leastfreqletters.append(elem)	
 	print(mostfreqletters)	
 	print(leastfreqletters)
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
