@@ -8,5 +8,4 @@
 # if s does not contain any alphabetic characters, the result should be the empty string ("")
 
 def leastfrequentletters(s):
-	# Your code goes here
-	pass
+	s = s.lower(s)
