@@ -7,20 +7,20 @@
 # compare the strings). So, for example:
 # longestCommonSubstring("abcABC", "zzabZZAB") returns "AB" and not "ab"
 
-from difflib import SequenceMatcher
-
 def longestcommonsubstring(s1, s2):
-    seqMatch = SequenceMatcher(None, s1, s2)
-    a = 0
-    b = 0 
-    m = seqMatch.find_longest_match(a, len(s1), b, len(s2))
-
+    st = ""
     if s1 == "" or s2 == "":
         return None
-    if (m.size != 0):
-        res = s1[m.a: m.a + m.size]
-        return res
-    else:
-        return None
+    for i in range(len(s1)):
+        for j in range(i, len(s1) + 1):
+            subSt = s1[i:]
+            if subSt in s2:
+                if len(subSt) > len(st):
+                    st = subSt
+                elif len(subSt) < len(st):
+                    if subSt < st:
+                        st = subSt
+    return st
+
 
 print(longestcommonsubstring("abcdef", "abqrcdest"))
