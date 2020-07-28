@@ -13,16 +13,15 @@ from collections import defaultdict
 def leastfrequentletters(s):
 	freqletters = []
 	lfl = []
-	table = defaultdict(lambda:0)
 	letters_list = list(string.ascii_lowercase)
 	s = s.lower()
 	for elem in s:
 		if elem in letters_list:
 			freqletters.append(elem)
-
 	for elem in freqletters:
 		if elem not in lfl:
 			lfl.append(elem)
+	print(lfl)
 	for elem in freqletters:
 		if elem in lfl:
 			lfl.remove(elem)
