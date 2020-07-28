@@ -8,18 +8,21 @@
 # if s does not contain any alphabetic characters, the result should be the empty string ("")
 
 import string
-import collections
+from collections import defaultdict
 
 def leastfrequentletters(s):
 	freqletters = []
-	leastfreqletters = []
+	lfl = []
+	table = defaultdict(lambda:0)
 	letters_list = list(string.ascii_lowercase)
 	s = s.lower()
 	for elem in s:
 		if elem in letters_list:
 			freqletters.append(elem)
-	counter = collections.Counter(freqletters)
-	print(counter.keys())
-	print(counter.values())
 
+	for elem in freqletters:
+		if elem not in lfl:
+			lfl.append(elem)
+		
+	return lfl
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
