@@ -19,6 +19,3 @@ def longestcommonsubstring(s1, s2):
                     if subSt < st:
                         st = subSt
     return st
-
-
-print(longestcommonsubstring("abcdef", "abqrcdest"))
