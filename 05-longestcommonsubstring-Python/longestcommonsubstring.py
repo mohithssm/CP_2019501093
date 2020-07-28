@@ -15,7 +15,7 @@ def longestcommonsubstring(s1, s2):
     b = 0 
     m = seqMatch.find_longest_match(a, len(s1), b, len(s2))
 
-    if s1 == '' or s2 == '':
+    if s1 == "" or s2 == "":
         return None
     if (m.size != 0):
         res = s1[m.a: m.a + m.size]
