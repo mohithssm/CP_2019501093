@@ -8,5 +8,6 @@
 # if s does not contain any alphabetic characters, the result should be the empty string ("")
 
 def leastfrequentletters(s):
-	s = s.lower(s)
+	s = s.lower()
 	print(s)
+print(leastfrequentletters("aDq efQ? FB'daf!!!"))
