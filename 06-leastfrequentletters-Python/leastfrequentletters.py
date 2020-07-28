@@ -7,7 +7,16 @@
 # yet covered lists, sets, maps, or efficiency, you are not expected to write the most efficient solution. Finally, 
 # if s does not contain any alphabetic characters, the result should be the empty string ("")
 
+import string
+
 def leastfrequentletters(s):
+	mostfreqletters = []
+	leastfreqletters = []
+	letters_list = list(string.ascii_lowercase)
 	s = s.lower()
-	print(s)
+	for elem in s:
+		if elem not in mostfreqletters:
+			mostfreqletters.append(elem)
+		else:
+			leastfreqletters.append(elem)
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
