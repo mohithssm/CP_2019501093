@@ -27,4 +27,4 @@ def leastfrequentletters(s):
 		if elem in freqletters:
 			lfl.remove(elem)
 	return lfl
-print(leastfrequentletters("aDq efQ? FB'daf!!!"))
+print(leastfrequentletters("abc def! GFE'cag!!!"))
