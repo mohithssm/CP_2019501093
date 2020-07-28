@@ -25,5 +25,5 @@ def leastfrequentletters(s):
 	for elem in lfl:
 		if elem in freqletters:
 			lfl.remove(elem)
-	return "".join(lfl)
+	return "".join(lfl[:-1])
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
