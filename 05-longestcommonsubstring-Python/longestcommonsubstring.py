@@ -21,3 +21,5 @@ def longestcommonsubstring(s1, s2):
         return res
     else:
         return None
+
+print(longestcommonsubstring("abcdef", "abqrcdest"))
