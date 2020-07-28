@@ -10,18 +10,13 @@
 import string
 
 def leastfrequentletters(s):
-	mostfreqletters = []
+	freqletters = []
 	leastfreqletters = []
 	letters_list = list(string.ascii_lowercase)
 	s = s.lower()
 	for elem in s:
-		if elem not in mostfreqletters:
-			mostfreqletters.append(elem)		
-		else:
-			leastfreqletters.append(elem)
-	for elem in mostfreqletters:
-		if elem in leastfreqletters:
-			mostfreqletters.remove(elem)	
-	print(mostfreqletters)	
+		if elem in letters_list:
+			freqletters.append(elem)
+	print(freqletters)	
 	print(leastfreqletters)
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
