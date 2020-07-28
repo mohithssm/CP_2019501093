@@ -9,8 +9,6 @@
 
 def longestcommonsubstring(s1, s2):
     st = ""
-    if s1 == "" or s2 == "":
-        return None
     for i in range(len(s1)):
         for j in range(i, len(s1) + 1):
             subSt = s1[i:]
