@@ -24,5 +24,5 @@ def leastfrequentletters(s):
 		if elem not in lfl:
 			lfl.append(elem)
 		
-	return lfl
+	return lfl, freqletters
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
