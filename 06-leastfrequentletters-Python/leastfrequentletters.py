@@ -9,3 +9,4 @@
 
 def leastfrequentletters(s):
 	s = s.lower(s)
+	print(s)
