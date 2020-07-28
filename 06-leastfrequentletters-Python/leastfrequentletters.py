@@ -15,7 +15,7 @@ def leastfrequentletters(s):
 	letters_list = list(string.ascii_lowercase)
 	s = s.lower()
 	for elem in s:
-		if elem not in mostfreqletters:
+		if elem in mostfreqletters:
 			mostfreqletters.append(elem)
 		else:
 			leastfreqletters.append(elem)
