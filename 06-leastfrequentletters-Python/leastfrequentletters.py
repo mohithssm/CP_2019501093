@@ -21,6 +21,6 @@ def leastfrequentletters(s):
 				leastfreqletters.append(elem)			
 		else:
 			leastfreqletters.append(elem)
-	
+	print(mostfreqletters)	
 	print(leastfreqletters)
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
