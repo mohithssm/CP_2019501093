@@ -15,7 +15,7 @@ def longestcommonsubstring(s1, s2):
             if subSt in s2:
                 if len(subSt) > len(st):
                     st = subSt
-                elif len(subSt) < len(st):
+                elif len(subSt) == len(st):
                     if subSt < st:
                         st = subSt
     return st
