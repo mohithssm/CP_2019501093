@@ -17,7 +17,7 @@ def leastfrequentletters(s):
 	for elem in s:
 		if elem not in mostfreqletters:
 			mostfreqletters.append(elem)
-			if elem in mostfreqletters:
+			if elem in leastfreqletters:
 				leastfreqletters.append(elem)			
 		else:
 			leastfreqletters.append(elem)
