@@ -17,7 +17,6 @@ def longestcommonsubstring(s1, s2):
 
     if (m.size != 0):
         res = s1[m.a: m.a + m.size]
-        print(res)
         return res
     else:
         return None
