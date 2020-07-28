@@ -19,7 +19,7 @@ def leastfrequentletters(s):
 		if elem in letters_list:
 			freqletters.append(elem)
 	counter = collections.Counter(freqletters)
-	print(counter.keys)
+	print(counter.keys())
 	print(counter.values)
 
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
