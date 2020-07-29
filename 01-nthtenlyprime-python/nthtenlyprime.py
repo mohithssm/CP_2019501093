@@ -1,7 +1,11 @@
 def fun_nthtenlyprime(a):
-    pass
-
-
+	count = 1
+	while n >= 0:
+		if fun_istenlyprime(count):
+			n = n - 1
+		count = count + 1
+	return count-1
+		
 def fun_istenlyprime(n):
     pass
 
