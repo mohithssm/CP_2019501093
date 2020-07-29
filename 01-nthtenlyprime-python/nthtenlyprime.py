@@ -7,7 +7,15 @@ def fun_nthtenlyprime(a):
 	return count-1
 		
 def fun_istenlyprime(n):
-    pass
+    sum = 0
+    while n != 0:
+        rem = n % 10
+        sum = sum + rem
+        n = n // 10
+    if sum == 10:
+        return True
+    else:
+        return False
 
 
 def fun_isprime(n):
