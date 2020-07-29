@@ -1,13 +1,14 @@
 import math
 def fun_largestnumber(a):
-    m = 0
-    n = 0
-    for i in range(len(a)):
-        c = a[i]
-        if character.isdigit(c):
-            n = n * 10 +(c - '0')
-        else:
-            m = math.max(m , n)
-            n = 0
+    ls = list()
+    for elem in a.split():
+        try:
+            ls.append(int(elem))
+        except:
+            pass
+    try:
+        return max(ls)
+    except:
+        return None
 
-    return math.max(m, n)
+print(fun_largestnumber("we have 32 dogs 3 cats"))
