@@ -1,14 +1,15 @@
 import math
 def fun_largestnumber(a):
-    ls = list()
-    for elem in a.split():
-        try:
-            ls.append(int(elem))
-        except:
-            pass
-    try:
-        return max(ls)
-    except:
-        return 0
+    m = 0
+    n = 0
+    for i in range(len(a)):
+        c = a[i]
+        if c >= "0" and c <= "9":
+            n = n * 10 + int(int(c) - 0)
+        else:
+            m = max(m , n)
+            n = 0
 
-print(fun_largestnumber("wehave15dogs2cats"))
+    return max(m, n)
+
+print(fun_largestnumber("we have 32 dogs 3 cats"))
