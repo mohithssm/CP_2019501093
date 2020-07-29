@@ -9,6 +9,6 @@ def fun_largestnumber(a):
     try:
         return max(ls)
     except:
-        return None
+        return 0
 
 print(fun_largestnumber("we have dogs cats"))
