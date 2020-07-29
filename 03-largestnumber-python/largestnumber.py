@@ -11,5 +11,3 @@ def fun_largestnumber(a):
             n = 0
 
     return max(m, n)
-
-print(fun_largestnumber("wehave15dogs2cats"))
