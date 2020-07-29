@@ -11,4 +11,4 @@ def fun_largestnumber(a):
     except:
         return None
 
-print(fun_largestnumber("we have 32 dogs 3 cats"))
+print(fun_largestnumber("we have dogs cats"))
