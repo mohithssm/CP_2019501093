@@ -1,8 +1,8 @@
 def fun_nthtenlyprime(a):
 	count = 1
-	while n >= 0:
+	while a >= 0:
 		if fun_istenlyprime(count) and fun_istenlyprime(count):
-			n = n - 1
+			a = a - 1
 		count = count + 1
 	return count-1
 		
@@ -25,3 +25,6 @@ def fun_isprime(n):
 		return True
 	else:
 		return False
+
+
+print(fun_nthtenlyprime(0))
