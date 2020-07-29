@@ -17,7 +17,6 @@ def fun_istenlyprime(n):
     else:
         return False
 
-
 def fun_isprime(n):
 	if n > 1:
 		for i in range(2, n//2):
