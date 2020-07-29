@@ -8,4 +8,4 @@ def fun_hasbalancedparantheses(a):
     
     return count == 0
 
-print(fun_hasbalancedparantheses("( ( ( ( )3)) "))
+print(fun_hasbalancedparantheses("( ( ( ( )3)))  "))
