@@ -1,8 +1,7 @@
-import pytest
-from hasbalancedparantheses import fun_hasbalancedparantheses
-import os
-import sys
+import os, sys
 sys.path.append(os.getcwd())
+from hasbalancedparantheses import fun_hasbalancedparantheses
+import pytest
 
 
 @pytest.mark.parametrize('a, result', [
