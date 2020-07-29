@@ -7,7 +7,7 @@ def fun_largestnumber(a):
         if character.isdigit(c):
             n = n * 10 +(c - '0')
         else:
-            m = Math.max(m , n)
+            m = math.max(m , n)
             n = 0
 
-    return Math.max(m, n)
+    return math.max(m, n)
