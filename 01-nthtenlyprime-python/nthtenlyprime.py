@@ -1,8 +1,10 @@
 def fun_nthtenlyprime(a):
 	count = 0
 	val = 2
+	lst = []
 	while count <= a:
 		if fun_istenlyprime(val) and fun_istenlyprime(val):
+			lst.append(val)
 			count = count + 1
 		val = val + 1
 	return val-1
