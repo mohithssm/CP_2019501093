@@ -7,6 +7,7 @@ def fun_nthtenlyprime(a):
 			lst.append(val)
 			count = count + 1
 		val = val + 1
+	print(lst)
 	return val-1
 
 def fun_istenlyprime(n):
