@@ -26,5 +26,4 @@ def fun_isprime(n):
 	else:
 		return False
 
-
 print(fun_nthtenlyprime(1))
