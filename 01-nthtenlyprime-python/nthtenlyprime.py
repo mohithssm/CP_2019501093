@@ -31,4 +31,4 @@ def fun_isprime(n):
 			return False
 	return True
 
-print(fun_nthtenlyprime(1))
+print(fun_nthtenlyprime(3))
