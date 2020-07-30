@@ -3,7 +3,7 @@ def fun_nthtenlyprime(a):
 	val = 2
 	lst = []
 	while count <= a:
-		if fun_istenlyprime(val):
+		if fun_istenlyprime(val) and fun_isprime(val):
 			lst.append(val)
 			count = count + 1
 		val = val + 1
@@ -15,7 +15,7 @@ def fun_istenlyprime(n):
     while n != 0:
         rem = n % 10
         sum = sum + rem
-        n = n / 10
+        n = n // 10
     if sum == 10:
         return True
     else:
