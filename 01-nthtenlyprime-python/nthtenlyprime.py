@@ -1,10 +1,11 @@
 def fun_nthtenlyprime(a):
-	count = 1
-	while a >= 0:
-		if fun_istenlyprime(count) and fun_istenlyprime(count):
-			a = a - 1
-		count = count + 1
-	return count-1
+	count = 0
+	val = 2
+	while count <= a:
+		if fun_istenlyprime(val) and fun_istenlyprime(val):
+			count = count + 1
+		val = val + 1
+	return val-1
 
 def fun_istenlyprime(n):
     sum = 0
