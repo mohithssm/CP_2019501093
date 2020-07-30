@@ -30,5 +30,3 @@ def fun_isprime(n):
 		if n%i == 0:
 			return False
 	return True
-
-print(fun_nthtenlyprime(10))
