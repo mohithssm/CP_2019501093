@@ -5,7 +5,7 @@ def fun_nthtenlyprime(a):
 			a = a - 1
 		count = count + 1
 	return count-1
-		
+
 def fun_istenlyprime(n):
     sum = 0
     while n != 0:
