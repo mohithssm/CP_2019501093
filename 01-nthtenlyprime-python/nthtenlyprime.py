@@ -27,4 +27,4 @@ def fun_isprime(n):
 		return False
 
 
-print(fun_nthtenlyprime(4))
+print(fun_nthtenlyprime(0))
